@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6
+# Build 269223 by xbuild on Wed Jun  5 11:17:50 MDT 2013
+# Start of session at: Mon Sep 17 10:44:00 2018
+# Process ID: 6768
+# Log file: C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/pa.fromNetlist.tcl}
+set_property out_term NONE [get_ports [list sync_out_1]]
+set_property out_term NONE [get_ports [list sync_out_2]]
+set_property pulltype PULLUP [get_ports [list sync_in_2]]
+save_constraints

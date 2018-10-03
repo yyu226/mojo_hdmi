@@ -1,0 +1,15 @@
+# Output products list for <ddsc>
+_xmsgs\pn_parser.xmsgs
+ddsc.asy
+ddsc.gise
+ddsc.ngc
+ddsc.sym
+ddsc.v
+ddsc.veo
+ddsc.xco
+ddsc.xise
+ddsc\doc\dds_compiler_v4_0_vinfo.html
+ddsc\doc\dds_ds558.pdf
+ddsc_flist.txt
+ddsc_readme.txt
+ddsc_xmdf.tcl

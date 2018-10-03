@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6
+# Build 269223 by xbuild on Wed Jun  5 11:17:50 MDT 2013
+# Start of session at: Mon Sep 17 10:36:59 2018
+# Process ID: 8852
+# Log file: C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/pa.fromNetlist.tcl}
+set_property in_term NONE [get_ports [list sync_in_1]]
+set_property in_term NONE [get_ports [list sync_in_2]]
+set_property out_term UNTUNED_50 [get_ports [list sync_out_1]]
+set_property out_term UNTUNED_50 [get_ports [list sync_out_2]]
+save_constraints

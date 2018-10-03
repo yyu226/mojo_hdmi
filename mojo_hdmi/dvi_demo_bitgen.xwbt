@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\dvi_demo.ncd
+OUTFILE=C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\dvi_demo.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi
+LICENSE=WebPack
+USER_INFO=210981254_0_0_774

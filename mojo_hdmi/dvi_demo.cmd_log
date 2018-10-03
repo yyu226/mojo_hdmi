@@ -1,0 +1,652 @@
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
+xst -intstyle ise -ifn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.xst" -ofn "C:/Users/Ying Yu/Desktop/Mojo_v3/mojo_hdmi/dvi_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dvi_demo.ucf -p xc6slx9-tqg144-3 "dvi_demo.ngc" dvi_demo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dvi_demo_map.ncd dvi_demo.ngd dvi_demo.pcf 
+par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd dvi_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dvi_demo.twx dvi_demo.ncd -o dvi_demo.twr dvi_demo.pcf -ucf dvi_demo.ucf 
+bitgen -intstyle ise -f dvi_demo.ut dvi_demo.ncd 
