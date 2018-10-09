@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+`define FWVGA 
 module i2c_master(
 					input CLOCK_IN,
 					output CLOCK_OUT1,
@@ -12,6 +12,31 @@ module i2c_master(
     );
 
 /************ Parameters List ******************************/
+`ifdef FWVGA
+parameter REG_N1  = 8'h00;
+parameter REG_N2  = 8'h23;
+parameter REG_N3  = 8'hb0;
+parameter REG_N4  = 8'h0b;
+parameter REG_N5  = 8'h89;
+parameter REG_N6  = 8'h58;
+parameter REG_N7  = 8'h08;
+parameter REG_N8  = 8'h44;
+parameter REG_N9  = 8'h00;
+parameter REG_N10 = 8'h01;
+parameter REG_N11 = 8'h04;
+`else //800*600@120hz 73.25Mhz
+parameter REG_N1  = 8'h00;
+parameter REG_N2  = 8'h33;
+parameter REG_N3  = 8'he4;
+parameter REG_N4  = 8'hd1;
+parameter REG_N5  = 8'hdf;
+parameter REG_N6  = 8'h96;
+parameter REG_N7  = 8'h08;
+parameter REG_N8  = 8'h1e;
+parameter REG_N9  = 8'h00;
+parameter REG_N10 = 8'h01;
+parameter REG_N11 = 8'h04;
+`endif
 parameter STAND_BY = 0;
 parameter START_C  = 1;
 parameter SLV_ADDR = 2;
@@ -127,17 +152,17 @@ begin
 							 sda_oe <= 1;
 							 rsda   <= 1;
 							 case(toc)
-								0: begin areg <= 8'h84; dreg <= 8'h00; end
-								1: begin areg <= 8'h00; dreg <= 8'h33; end
-								2: begin areg <= 8'h05; dreg <= 8'he4; end
-								3: begin areg <= 8'h06; dreg <= 8'hd1; end
-								4: begin areg <= 8'h07; dreg <= 8'hdf; end
-								5: begin areg <= 8'h08; dreg <= 8'h96; end
-								6: begin areg <= 8'h09; dreg <= 8'h08; end
-								7: begin areg <= 8'h0a; dreg <= 8'h1e; end
-								8: begin areg <= 8'h0b; dreg <= 8'h00; end
-								9: begin areg <= 8'h84; dreg <= 8'h01; end
-							  10: begin areg <= 8'h84; dreg <= 8'h04; end
+								0: begin areg <= 8'h84; dreg <= REG_N1; end
+								1: begin areg <= 8'h00; dreg <= REG_N2; end
+								2: begin areg <= 8'h05; dreg <= REG_N3; end
+								3: begin areg <= 8'h06; dreg <= REG_N4; end
+								4: begin areg <= 8'h07; dreg <= REG_N5; end
+								5: begin areg <= 8'h08; dreg <= REG_N6; end
+								6: begin areg <= 8'h09; dreg <= REG_N7; end
+								7: begin areg <= 8'h0a; dreg <= REG_N8; end
+								8: begin areg <= 8'h0b; dreg <= REG_N9; end
+								9: begin areg <= 8'h84; dreg <= REG_N10; end
+							  10: begin areg <= 8'h84; dreg <= REG_N11; end
 							  default: begin areg <= 8'h84; dreg <= 8'h04; end
 							 endcase
 						 end

@@ -104,10 +104,10 @@ module dvi_demo (
   initial
   begin
 		rMSW = 0;
-		$readmemh("ml750.txt", lut);
+		/*$readmemh("ml750.txt", lut);
 		outfile = $fopen("cout.txt");
 		for(i=0; i<1024; i=i+1)begin
-		$fdisplay(outfile, "%d:%h" , i, lut[i]); end
+		$fdisplay(outfile, "%d:%h" , i, lut[i]); end*/
   end
   
   assign rstbtn_n = 1'b1;
@@ -499,7 +499,7 @@ ddc_edid  DELL15(
       ctmds = ctmds + 1;*/
 		
   //assign LED[7:0] = {2'b00, MSW, crx0[15], cpll[5], cpll25[23], ctmds[24], rx0_psalgnerr};
-  assign LED = {trig_synco1, sync_out_1, sync_in_1, sync_out_2, sync_in_2, lcntr[25], rMODE};
+  assign LED = {1'b1, sync_out_1, sync_in_1, sync_out_2, sync_in_2, lcntr[25], rMODE};
   
 //******************* Below is the Structured Light output ***************************
 wire sync_hs, sync_vs, de;
@@ -530,7 +530,7 @@ assign sync_vs = (V_polarity == 1'b1) ? rx0_vsync : ~rx0_vsync;
 //******* the 4 lines of code above have been tested to be working ************
 //************************* Use "ENABLE" bit to switch ************************
 reg [15:0] frame1 = 0;
-wire [31:0] phout;
+wire [31:0] phout, phvout;
 always@(posedge rx0_pllclk1)
 begin
 		if(sync_vs)
@@ -564,17 +564,17 @@ ddsc UP_DOWN(
 			.cosine			(),
 			.phase_out		(phout)
 );
-/*ddsc LEFT_RIGHT(
+ddsc LEFT_RIGHT(
 			.clk				(rx0_pllclk1),
-			.sclr				(sync_hs),
+			.sclr				(~sync_hs),
 			
 			.pinc_in			(phase_i),
 			.poff_in			(phase_o),
 			.cosine			(),
-			.phase_out		()
-);*/
+			.phase_out		(phvout)
+);
 assign pdata = lut[phout[31:22]];//lut[pout[15:6]];
-assign vdata = lut[pvout[15:6]];
+assign vdata = lut[phvout[31:22]];
 assign hdata = ((frame1 < 28) || (frame1 >= 65535)) ? pdata : vdata;
 /*always@(posedge rx0_pllclk1)
 begin
@@ -598,7 +598,7 @@ begin
 		end
 end
 
-always@(posedge rx0_pllclk1)				//negedge: 800*600; posedge: 854*480 
+always@(negedge rx0_pllclk1)				//negedge: 800*600; posedge: 854*480 
 begin
 	if(px_cntr==0)								//1 or 2 does not work, as long as >= 3, all good
 													//Condition: Dell 24' EDID, Windows7 PC, 800x600 resolution
@@ -709,11 +709,11 @@ INSTANTIATION1(
 );
 
 /*** SPI receiver used to load the LUT of the projector ***/
-/*always@(posedge new_spi)
+always@(posedge new_spi)
 begin
 	lut[m]  = rx_spi;
 	m = m + 1;
-end*/
+end
 /**********************************************************/
 always@(posedge new_data or posedge new_tx_data)
 begin
@@ -800,12 +800,13 @@ always@(posedge rx0_hsync)
 	column_cntr_L = column_cntr_i;
 assign H_polarity = (column_cntr_H > column_cntr_L) ? 1'b1 : 1'b0;
 /************************* 2. for PC topleft pixel *******************************/
-wire sync1;
-
 reg [7:0] last_pixel = 0;
 reg trig_synco1 = 0;
 reg trig_synco2 = 0;
-reg sync_out_1pc, sync_out_2pc;
+reg sync_out_2pc = 0;
+reg trig_ar = 0;
+
+wire sync_out_1pc;
 
 always@(posedge new_data)
 begin
@@ -826,15 +827,16 @@ begin
 				trig_synco2 <= 0;
 		end
 end
-always@(negedge sync_vs)				//negedge rx0_vsync
+always@(posedge sync_vs)
 begin
 	case ({trig_synco1, trig_synco2})
-		2'b00: begin sync_out_1pc <= 0; sync_out_2pc <= 0; end
-		2'b01: begin sync_out_1pc <= 0; sync_out_2pc <= 1; end
-		2'b10: begin sync_out_1pc <= sync_vs; sync_out_2pc <= 0; end
-		2'b11: begin sync_out_1pc <= sync_vs; sync_out_2pc <= 1; end
+		2'b00: begin trig_ar <= 0; sync_out_2pc <= 0; end
+		2'b01: begin trig_ar <= 0; sync_out_2pc <= 1; end
+		2'b10: begin trig_ar <= 1; sync_out_2pc <= 0; end
+		2'b11: begin trig_ar <= 1; sync_out_2pc <= 1; end
 	endcase
 end
+assign sync_out_1pc = (trig_ar==1'b1) ? sync_vs : 0;
 /******* 3. for structured light (including both clock from PC and external oscillator)*******/
 reg sync_out_2r = 0;
 reg [1:0] delay_st = 2'b11;
@@ -972,49 +974,42 @@ assign sync_out_1slr = (stchp==1'b1) ? SYNC_VS : 0;
          refer to the email on 8/13/2018 titled "horizontal patterns" from Dr. Lau */
 `ifdef TIDLP
 //H_increment: 6826.66, V_increment: 6826.66 ^^^ R: [0, 480] [0, 480] ^^^ C: [0,960], [53, 907]
-parameter PHASE_OFFSET08H = 32'd0;	         parameter PHASE_OFFSET18H = 32'd536870912;
-parameter PHASE_OFFSET28H = 32'd1073741824;  parameter PHASE_OFFSET38H = 32'd1610612736;
-parameter PHASE_OFFSET48H = 32'd2147483648;  parameter PHASE_OFFSET58H = 32'd2684354560;
+parameter PHASE_OFFSET08H = 32'd0;	         parameter PHASE_OFFSET18H = 32'd536870912;	parameter PHASE_INC_H1  = 32'd8947849; 
+parameter PHASE_OFFSET28H = 32'd1073741824;  parameter PHASE_OFFSET38H = 32'd1610612736;	parameter PHASE_INC_H6  = 32'd53687091;
+parameter PHASE_OFFSET48H = 32'd2147483648;  parameter PHASE_OFFSET58H = 32'd2684354560;	parameter PHASE_INC_H30 = 32'd268435456;
 parameter PHASE_OFFSET68H = 32'd3221225472;  parameter PHASE_OFFSET78H = 32'd3758096384;
 
-parameter PHASE_OFFSET08V = 16'd3618;	 parameter PHASE_OFFSET18V = 16'd10906;
-parameter PHASE_OFFSET28V = 16'd18193;  parameter PHASE_OFFSET38V = 16'd25481;
-parameter PHASE_OFFSET48V = 16'd32768;  parameter PHASE_OFFSET58V = 16'd40055;
-parameter PHASE_OFFSET68V = 16'd47343;  parameter PHASE_OFFSET78V = 16'd54630;
-
-parameter PHASE_INC_H1  = 32'd8947849;     	parameter PHASE_INC_V1  = 16'd68;
-parameter PHASE_INC_H6  = 32'd53687091;		parameter PHASE_INC_V6  = 16'd410;
-parameter PHASE_INC_H30 = 32'd268435456;		parameter PHASE_INC_V30 = 16'd2048;
+parameter PHASE_OFFSET08V = 32'd237117986;	 parameter PHASE_OFFSET18V = 32'd773988898;	parameter PHASE_INC_V1  = 32'd4473924;
+parameter PHASE_OFFSET28V = 32'd1310859810;   parameter PHASE_OFFSET38V = 32'd1847730722;	parameter PHASE_INC_V6  = 32'd26843546;
+parameter PHASE_OFFSET48V = 32'd2384601634;   parameter PHASE_OFFSET58V = 32'd2921472546;	parameter PHASE_INC_V30 = 32'd134217728;
+parameter PHASE_OFFSET68V = 32'd3458343458;   parameter PHASE_OFFSET78V = 32'd3995214370;	
 
 `else		//800*600
 //H_increment: 6826.66, V_increment: 6826.66 ^^^ R: [0,720] [60, 660] ^^^ C: [0,960], [80, 880]
-parameter PHASE_OFFSET08H = 16'd5461;	 parameter PHASE_OFFSET18H = 16'd12288;
-parameter PHASE_OFFSET28H = 16'd19115;  parameter PHASE_OFFSET38H = 16'd25941;
-parameter PHASE_OFFSET48H = 16'd32768;  parameter PHASE_OFFSET58H = 16'd39595;
-parameter PHASE_OFFSET68H = 16'd46421;  parameter PHASE_OFFSET78H = 16'd53248;
+parameter PHASE_OFFSET08H = 32'd357913941;	 parameter PHASE_OFFSET18H = 32'd894784853;	parameter PHASE_INC_H1  = 32'd5965232; 
+parameter PHASE_OFFSET28H = 32'd1431655765;   parameter PHASE_OFFSET38H = 32'd1968526677;	parameter PHASE_INC_H6  = 32'd35791394;
+parameter PHASE_OFFSET48H = 32'd2505397589;   parameter PHASE_OFFSET58H = 32'd3042268501;	parameter PHASE_INC_H30 = 32'd178956970;
+parameter PHASE_OFFSET68H = 32'd3579139413;   parameter PHASE_OFFSET78H = 32'd4116010325;
 
-parameter PHASE_OFFSET08V = 16'd5461;	 parameter PHASE_OFFSET18V = 16'd12288;
-parameter PHASE_OFFSET28V = 16'd19115;  parameter PHASE_OFFSET38V = 16'd25941;
-parameter PHASE_OFFSET48V = 16'd32768;  parameter PHASE_OFFSET58V = 16'd39595;
-parameter PHASE_OFFSET68V = 16'd46421;  parameter PHASE_OFFSET78V = 16'd53248;
+parameter PHASE_OFFSET08V = 32'd357913941;	 parameter PHASE_OFFSET18V = 32'd894784853;	parameter PHASE_INC_V1  = 32'd4473924;
+parameter PHASE_OFFSET28V = 32'd1431655765;   parameter PHASE_OFFSET38V = 32'd1968526677;	parameter PHASE_INC_V6  = 32'd26843546;
+parameter PHASE_OFFSET48V = 32'd2505397589;   parameter PHASE_OFFSET58V = 32'd3042268501;	parameter PHASE_INC_V30 = 32'd134217728;
+parameter PHASE_OFFSET68V = 32'd3579139413;   parameter PHASE_OFFSET78V = 32'd4116010325;
 
-parameter PHASE_INC_H1  = 16'd91;       parameter PHASE_INC_V1  = 16'd68;
-parameter PHASE_INC_H6  = 16'd546;		 parameter PHASE_INC_V6  = 16'd410;
-parameter PHASE_INC_H30 = 16'd2731;		 parameter PHASE_INC_V30 = 16'd2048;
 `endif
 
 always@(frame1)
 begin
 		case(co_n)
-			0: begin poff_H <= PHASE_OFFSET08H;		poff_V <= PHASE_OFFSET08V; poff_E <= 16'd0; end
-			1:	begin poff_H <= PHASE_OFFSET18H;		poff_V <= PHASE_OFFSET18V; poff_E <= 16'd8192; end
-			2: begin poff_H <= PHASE_OFFSET28H;		poff_V <= PHASE_OFFSET28V; poff_E <= 16'd16384; end
-			3: begin poff_H <= PHASE_OFFSET38H;		poff_V <= PHASE_OFFSET38V; poff_E <= 16'd24576; end
-			4: begin poff_H <= PHASE_OFFSET48H;		poff_V <= PHASE_OFFSET48V; poff_E <= 16'd32768; end
-			5: begin poff_H <= PHASE_OFFSET58H;		poff_V <= PHASE_OFFSET58V; poff_E <= 16'd40960; end
-			6: begin poff_H <= PHASE_OFFSET68H;		poff_V <= PHASE_OFFSET68V; poff_E <= 16'd49152; end
-			7: begin poff_H <= PHASE_OFFSET78H;		poff_V <= PHASE_OFFSET78V; poff_E <= 16'd57344; end
-			default: begin poff_H <= 16'd0;	poff_V <= 16'd0; end
+			0: begin poff_H <= PHASE_OFFSET08H;		poff_V <= PHASE_OFFSET08V; poff_E <= 32'd0; end
+			1:	begin poff_H <= PHASE_OFFSET18H;		poff_V <= PHASE_OFFSET18V; poff_E <= 32'd536870912; end
+			2: begin poff_H <= PHASE_OFFSET28H;		poff_V <= PHASE_OFFSET28V; poff_E <= 32'd1073741824; end
+			3: begin poff_H <= PHASE_OFFSET38H;		poff_V <= PHASE_OFFSET38V; poff_E <= 32'd1610612736; end
+			4: begin poff_H <= PHASE_OFFSET48H;		poff_V <= PHASE_OFFSET48V; poff_E <= 32'd2147483648; end
+			5: begin poff_H <= PHASE_OFFSET58H;		poff_V <= PHASE_OFFSET58V; poff_E <= 32'd2684354560; end
+			6: begin poff_H <= PHASE_OFFSET68H;		poff_V <= PHASE_OFFSET68V; poff_E <= 32'd3221225472; end
+			7: begin poff_H <= PHASE_OFFSET78H;		poff_V <= PHASE_OFFSET78V; poff_E <= 32'd3758096384; end
+			default: begin poff_H <= 32'd0;	poff_V <= 32'd0; end
 		endcase
 end
 
@@ -1041,13 +1036,13 @@ end
 always@(frame1)
 begin
 		case(co_K)
-		  1: begin phase_incH <= PHASE_INC_H1; 		phase_incV <= PHASE_INC_V1;  phase_incE <= 16'd136; end
-		  2: begin phase_incH <= PHASE_INC_H6; 		phase_incV <= PHASE_INC_V6;  phase_incE <= 16'd819; end
-		  3: begin phase_incH <= PHASE_INC_H30;		phase_incV <= PHASE_INC_V30; phase_incE <= 16'd4096; end
-		  default: begin phase_incH <= 16'd0;	phase_incV <= 16'd0; end
+		  1: begin phase_incH <= PHASE_INC_H1; 		phase_incV <= PHASE_INC_V1;  phase_incE <= 32'd8947848; end
+		  2: begin phase_incH <= PHASE_INC_H6; 		phase_incV <= PHASE_INC_V6;  phase_incE <= 32'd53687091; end
+		  3: begin phase_incH <= PHASE_INC_H30;		phase_incV <= PHASE_INC_V30; phase_incE <= 32'd268435456; end
+		  default: begin phase_incH <= 32'd0;	phase_incV <= 32'd0; end
 		endcase
 end
-assign phase_i = ((frame1 < 24) || (frame1 >= 65535)) ? phase_incH : (((frame1 > 27) && (frame1 < 52)) ? phase_incV : 16'd0);
+assign phase_i = ((frame1 < 24) || (frame1 >= 65535)) ? phase_incH : (((frame1 > 27) && (frame1 < 52)) ? phase_incV : 32'd0);
 assign phase_o = ((frame1 < 24) || (frame1 >= 65535)) ? poff_H : (((frame1 > 27) && (frame1 < 52)) ? poff_V : phase_off_8);
 
 always@(frame1)
@@ -1057,10 +1052,10 @@ begin
 		else if((frame1==24)||(frame1==26)||(frame1==52)||(frame1==54))
 				phase_off_8 <= 32'd0;
 		else
-				phase_off_8 <= 32'd0;
+				phase_off_8 <= 32'd2147483648;
 end
 
-always@(posedge sync_hs or negedge sync_vs)				//horizontal stripes
+/*always@(posedge sync_hs or negedge sync_vs)				//horizontal stripes
 begin
 	if(!sync_vs)
 		pout_m = phase_o;
@@ -1079,7 +1074,7 @@ begin
 	end
 end
 assign pout  = pout_m[15:0];
-assign pvout = pvout_m[15:0];
+assign pvout = pvout_m[15:0];*/
 //***************************************************************************************************	 
 
 always@(posedge CLK_40M)
@@ -1087,7 +1082,12 @@ begin
 	if(!sync_in_1)
 		frc = 0;
 	else if(ret)
-		frc = frc + 1;
+	begin
+		if(frc==55)
+			frc = 0;
+		else
+			frc = frc + 1;
+	end
 	else
 		frc = frc;
 end
@@ -1166,9 +1166,8 @@ end
 wire goo;
 wire [7:0] cosd3e;
 wire [7:0] hdata_e;
-wire [15:0] pout_meh;
 wire pll_locked, wlock;
-wire [15:0] phase_ie, phase_oe;
+wire [31:0] phase_ie, phase_oe;
 
 reg [7:0] zdata = 0;
 reg [31:0] pout_me = 0;
@@ -1209,10 +1208,9 @@ begin
 	else
 		pout_me = pout_me + phase_ie;
 end
-assign pout_meh = pout_me[15:0];
-assign hdata_e = lut[pout_meh[15:6]];
+assign hdata_e = lut[pout_me[31:22]];
 
-assign phase_ie = ((frame1 < 24) || ((frame1 > 27) && (frame1 < 52))) ? phase_incE : 16'd0;
+assign phase_ie = ((frame1 < 24) || ((frame1 > 27) && (frame1 < 52))) ? phase_incE : 32'd0;
 assign phase_oe = ((frame1 < 24) || ((frame1 > 27) && (frame1 < 52))) ? poff_E : phase_off_8;
 
 hdmi_top HDMI1_EXT_CLK(

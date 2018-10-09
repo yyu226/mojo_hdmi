@@ -48,8 +48,8 @@ module hdmi_top(
 	 parameter VBPOR = 11'd29;
 
 `elsif FWVGA
-/*********** FWVGA 854x480_60.00 ******************/
-	 parameter HAPIX = 11'd854;
+/*********** FWVGA 854x480_60.00 clock 33.50Mhz ******************/
+	 /*parameter HAPIX = 11'd854;
 	 parameter HFPOR = 11'd21;
 	 parameter HSPUL = 11'd85;
 	 parameter HBPOR = 11'd106;
@@ -57,7 +57,18 @@ module hdmi_top(
 	 parameter VAPIX = 11'd480;
 	 parameter VFPOR = 11'd12;
 	 parameter VSPUL = 11'd2;
-	 parameter VBPOR = 11'd30;
+	 parameter VBPOR = 11'd30;*/
+	 //clock 31.40Mhz
+	 parameter HAPIX = 11'd854;
+	 parameter HFPOR = 11'd10;
+	 parameter HSPUL = 11'd40;
+	 parameter HBPOR = 11'd4;
+	 
+	 parameter VAPIX = 11'd480;
+	 parameter VFPOR = 11'd8;
+	 parameter VSPUL = 11'd15;
+	 parameter VBPOR = 11'd73;
+	 
 `else
 /*********** 800*600@60 ***********************/
 	 parameter HAPIX = 11'd800;
