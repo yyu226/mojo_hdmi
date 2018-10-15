@@ -499,8 +499,28 @@ ddc_edid  DELL15(
       ctmds = ctmds + 1;*/
 		
   //assign LED[7:0] = {2'b00, MSW, crx0[15], cpll[5], cpll25[23], ctmds[24], rx0_psalgnerr};
-  assign LED = {1'b1, sync_out_1, sync_in_1, sync_out_2, sync_in_2, lcntr[25], rMODE};
-  
+  //assign LED = {1'b1, sync_out_1, sync_in_1, sync_out_2, sync_in_2, lcntr[25], rMODE};
+  reg [9:0] idx = 0;
+  reg [31:0] pcnt = 0;
+  always@(posedge clk25)
+  begin
+		if(m==1025) begin
+			if(pcnt<20000000)
+				pcnt = pcnt + 1;
+			else begin
+				pcnt = 0;
+				if(idx < 50)
+					idx = idx + 1;
+				else
+					idx = idx;
+			end
+		end
+		else begin
+			pcnt = 0;
+			idx = 0;
+		end
+  end
+  assign LED = lut[1023-idx][7:0];
 //******************* Below is the Structured Light output ***************************
 wire sync_hs, sync_vs, de;
 wire [7:0] cosd3;
@@ -669,7 +689,8 @@ wire new_spi;
 wire [7:0] rx_spi;
 
 reg new_tx_data = 0;
-reg [9:0] m = 0;
+reg [10:0] m = 0;
+wire [10:0] nn;
 
 avr_interface#(.CLK_RATE(50000000), .SERIAL_BAUD_RATE(500000))
 INSTANTIATION1(
@@ -709,10 +730,28 @@ INSTANTIATION1(
 );
 
 /*** SPI receiver used to load the LUT of the projector ***/
+assign nn = m - 1;
 always@(posedge new_spi)
 begin
-	lut[m]  = rx_spi;
-	m = m + 1;
+	if(m==0) begin
+		m = m + 1;
+	end	
+	else if(m<1023) begin //n=1023 after all new_spi
+		lut[nn[9:0]]  = rx_spi;
+		m  = m + 1;
+	end
+	else if(m==1023)
+	begin
+		lut[nn[9:0]]  = rx_spi;
+		m = m + 1;
+	end
+	else if(m==1024)
+	begin
+		lut[nn[9:0]]  = rx_spi;
+		m = m + 1;
+	end
+	else
+		m = m;
 end
 /**********************************************************/
 always@(posedge new_data or posedge new_tx_data)

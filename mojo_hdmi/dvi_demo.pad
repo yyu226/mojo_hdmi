@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Oct 03 16:01:53 2018
+Fri Oct 12 17:21:22 2018
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -113,14 +113,14 @@ P91|||GND||||||||||||
 P92||IOBS|IO_L41N_GCLK8_1|UNUSED||1|||||||||
 P93||IOBM|IO_L41P_GCLK9_IRDY1_1|UNUSED||1|||||||||
 P94||IOBS|IO_L40N_GCLK10_1|UNUSED||1|||||||||
-P95|test_pin<0>|IOB|IO_L40P_GCLK11_1|OUTPUT|LVCMOS25*|1|12|SLOW||||UNLOCATED|NO|NONE|
+P95||IOBM|IO_L40P_GCLK11_1|UNUSED||1|||||||||
 P96|||GND||||||||||||
-P97||IOBS|IO_L34N_1|UNUSED||1|||||||||
-P98||IOBM|IO_L34P_1|UNUSED||1|||||||||
+P97|test_pin<0>|IOB|IO_L34N_1|OUTPUT|LVCMOS25*|1|12|SLOW||||UNLOCATED|NO|NONE|
+P98|test_pin<1>|IOB|IO_L34P_1|OUTPUT|LVCMOS25*|1|12|SLOW||||UNLOCATED|NO|NONE|
 P99||IOBS|IO_L33N_1|UNUSED||1|||||||||
 P100||IOBM|IO_L33P_1|UNUSED||1|||||||||
 P101||IOBS|IO_L32N_1|UNUSED||1|||||||||
-P102|test_pin<1>|IOB|IO_L32P_1|OUTPUT|LVCMOS25*|1|12|SLOW||||UNLOCATED|NO|NONE|
+P102||IOBM|IO_L32P_1|UNUSED||1|||||||||
 P103|||VCCO_1|||1|||||2.50||||
 P104||IOBS|IO_L1N_VREF_1|UNUSED||1|||||||||
 P105||IOBM|IO_L1P_1|UNUSED||1|||||||||

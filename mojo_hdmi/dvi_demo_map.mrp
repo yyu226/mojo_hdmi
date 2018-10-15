@@ -10,46 +10,46 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Oct 03 16:00:33 2018
+Mapped Date    : Fri Oct 12 17:20:44 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   27
+Number of warnings:   82
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,253 out of  11,440   10%
-    Number used as Flip Flops:               1,231
-    Number used as Latches:                     22
+  Number of Slice Registers:                 1,328 out of  11,440   11%
+    Number used as Flip Flops:               1,309
+    Number used as Latches:                     19
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,020 out of   5,720   35%
-    Number used as logic:                    1,888 out of   5,720   33%
-      Number using O6 output only:           1,265
-      Number using O5 output only:             270
-      Number using O5 and O6:                  353
+  Number of Slice LUTs:                      2,061 out of   5,720   36%
+    Number used as logic:                    1,492 out of   5,720   26%
+      Number using O6 output only:             869
+      Number using O5 output only:             285
+      Number using O5 and O6:                  338
       Number used as ROM:                        0
-    Number used as Memory:                      64 out of   1,440    4%
-      Number used as Dual Port RAM:             64
-        Number using O6 output only:             8
+    Number used as Memory:                     460 out of   1,440   31%
+      Number used as Dual Port RAM:            460
+        Number using O6 output only:           404
         Number using O5 output only:             0
         Number using O5 and O6:                 56
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:     68
-      Number with same-slice register load:     28
-      Number with same-slice carry load:        40
+    Number used exclusively as route-thrus:    109
+      Number with same-slice register load:     46
+      Number with same-slice carry load:        63
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   803 out of   1,430   56%
-  Number of MUXCYs used:                       460 out of   2,860   16%
-  Number of LUT Flip Flop pairs used:        2,217
-    Number with an unused Flip Flop:         1,097 out of   2,217   49%
-    Number with an unused LUT:                 197 out of   2,217    8%
-    Number of fully used LUT-FF pairs:         923 out of   2,217   41%
-    Number of unique control sets:             145
+  Number of occupied Slices:                   667 out of   1,430   46%
+  Number of MUXCYs used:                       552 out of   2,860   19%
+  Number of LUT Flip Flop pairs used:        2,219
+    Number with an unused Flip Flop:         1,051 out of   2,219   47%
+    Number with an unused LUT:                 158 out of   2,219    7%
+    Number of fully used LUT-FF pairs:       1,010 out of   2,219   45%
+    Number of unique control sets:             185
     Number of slice register sites lost
-      to control set restrictions:             643 out of  11,440    5%
+      to control set restrictions:             812 out of  11,440    7%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -100,11 +100,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.89
+Average Fanout of Non-Clock Nets:                4.03
 
-Peak Memory Usage:  4633 MB
-Total REAL time to MAP completion:  49 secs 
-Total CPU time to MAP completion:   49 secs 
+Peak Memory Usage:  4651 MB
+Total REAL time to MAP completion:  17 secs 
+Total CPU time to MAP completion:   17 secs 
 
 Table of Contents
 -----------------
@@ -154,7 +154,7 @@ WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <DDC_SCL> is placed at site <P112>. The corresponding BUFG
-   component <N119_BUFG> is placed at site <BUFGMUX_X2Y2>. There is only a
+   component <N821_BUFG> is placed at site <BUFGMUX_X2Y2>. There is only a
    select set of IOBs that can use the fast path to the Clocker buffer, and they
    are not being used. You may want to analyze why this problem exists and
    correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
@@ -163,106 +163,195 @@ WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    specified COMP.PIN. The use of this override is highly discouraged as it may
    lead to very poor timing results. It is recommended that this error condition
    be corrected in the design.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net _n0780 is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net dvi_rx0/dec_b/c1 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net LED<5>_inv is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_hs is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_vs is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net new_data is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net SYNC_VS is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[1]_AND_244_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[11]_AND_224_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[10]_AND_226_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[5]_AND_236_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   OPTOMA/cSTATE[4]_GND_7_o_Mux_30_o is sourced by a combinatorial pin. This is
+   po_vsync_phase_oe[30]_AND_122_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _n0776 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    sync_in_1_sync_in_2_AND_118_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[12]_AND_222_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[0]_AND_246_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[13]_AND_220_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[14]_AND_218_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[15]_AND_216_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   po_vsync_phase_oe[15]_AND_248_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   po_vsync_phase_oe[13]_AND_252_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[4]_AND_238_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sync_hs_phase_o[9]_AND_228_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   po_vsync_phase_oe[14]_AND_250_o is sourced by a combinatorial pin. This is
+   po_vsync_phase_oe[29]_AND_124_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    OPTOMA/cSTATE[4]_GND_8_o_Mux_31_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dvi_rx0/dec_b/c1 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net SYNC_VS is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_in_1_inv is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_hs is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PROGRAMMABLE_OSC/clk_400k_inv is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_vs is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   OPTOMA/cSTATE[4]_GND_7_o_Mux_30_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   po_vsync_phase_oe[31]_AND_120_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut13_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut115_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut15_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut110_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut17_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut112_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut117_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut123_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut121_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut126_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut131_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut132_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut119_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut114_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut111_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut18_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut19_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut11_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut125_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut127_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut16_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut122_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut130_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut118_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut116_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut14_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut129_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut124_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut120_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut42_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut12_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut113_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut222_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut211_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut223_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut214_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut221_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut128_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut237_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut228_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut230_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut227_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut26_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut217_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut212_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut215_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut224_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut240_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut231_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut239_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut234_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut233_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut238_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut218_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut225_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut213_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut210_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut216_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut220_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut219_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut229_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut236_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut232_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut235_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut226_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut241_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network AVR_RX_BUSY_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 135 more times for the
+INFO:LIT:395 - The above info message is repeated 233 more times for the
    following (max. 5 shown):
    UART_RX_IBUF,
-   dvi_rx0/dec_r/cbnd/cbfifo_i/dram16s[9].i_RAM16X1D_U/SPO,
-   dvi_rx0/dec_r/cbnd/cbfifo_i/dram16s[8].i_RAM16X1D_U/SPO,
-   dvi_rx0/dec_r/cbnd/cbfifo_i/dram16s[7].i_RAM16X1D_U/SPO,
-   dvi_rx0/dec_r/cbnd/cbfifo_i/dram16s[6].i_RAM16X1D_U/SPO
+   Mram_lut1331/SPO,
+   Mram_lut1332/SPO,
+   Mram_lut1361/SPO,
+   Mram_lut1362/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -284,9 +373,9 @@ INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 459 block(s) removed
-  16 block(s) optimized away
- 468 signal(s) removed
+ 553 block(s) removed
+  44 block(s) optimized away
+ 569 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -1344,6 +1433,197 @@ The signal "UP_DOWN/sig0000002c" is sourceless and has been removed.
    Sourceless block "UP_DOWN/blk00000166" (FF) removed.
     The signal "UP_DOWN/sig000000a7" is sourceless and has been removed.
      Sourceless block "UP_DOWN/blk00000146" (FF) removed.
+The signal "LEFT_RIGHT/cosine<7>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<6>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<5>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<4>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<3>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<2>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<1>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/cosine<0>" is sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<21>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<20>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<19>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<18>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<17>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<16>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<15>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<14>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<13>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<12>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<11>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<10>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<9>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<8>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<7>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<6>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<5>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<4>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<3>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<2>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<1>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<0>" is
+sourceless and has been removed.
+The signal "LEFT_RIGHT/sig00000001" is sourceless and has been removed.
+The signal "LEFT_RIGHT/sig0000000b" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000023" (SFF) removed.
+  The signal "LEFT_RIGHT/sig000000a5" is sourceless and has been removed.
+The signal "LEFT_RIGHT/sig0000004c" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000106" (FF) removed.
+  The signal "LEFT_RIGHT/sig000000a6" is sourceless and has been removed.
+The signal "LEFT_RIGHT/sig00000041" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000111" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000062" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000151" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000bc" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000131" (FF) removed.
+The signal "LEFT_RIGHT/sig00000040" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000112" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000061" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000152" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000bb" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000132" (FF) removed.
+The signal "LEFT_RIGHT/sig0000003f" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000113" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000060" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000153" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000ba" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000133" (FF) removed.
+The signal "LEFT_RIGHT/sig0000003e" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000114" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000005f" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000154" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b9" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000134" (FF) removed.
+The signal "LEFT_RIGHT/sig0000003d" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000115" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000005e" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000155" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b8" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000135" (FF) removed.
+The signal "LEFT_RIGHT/sig0000003c" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000116" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000005d" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000156" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b7" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000136" (FF) removed.
+The signal "LEFT_RIGHT/sig0000003b" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000117" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000005c" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000157" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b6" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000137" (FF) removed.
+The signal "LEFT_RIGHT/sig0000003a" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000118" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000005b" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000158" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b5" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000138" (FF) removed.
+The signal "LEFT_RIGHT/sig00000039" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000119" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000005a" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000159" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b4" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000139" (FF) removed.
+The signal "LEFT_RIGHT/sig00000038" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk0000011a" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000059" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk0000015a" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b3" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk0000013a" (FF) removed.
+The signal "LEFT_RIGHT/sig00000037" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk0000011b" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000058" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk0000015b" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b2" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk0000013b" (FF) removed.
+The signal "LEFT_RIGHT/sig00000036" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk0000011c" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000057" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk0000015c" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b1" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk0000013c" (FF) removed.
+The signal "LEFT_RIGHT/sig00000035" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk0000011d" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000056" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk0000015d" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000b0" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk0000013d" (FF) removed.
+The signal "LEFT_RIGHT/sig00000034" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk0000011e" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000055" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk0000015e" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000af" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk0000013e" (FF) removed.
+The signal "LEFT_RIGHT/sig00000033" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk0000011f" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000054" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk0000015f" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000ae" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk0000013f" (FF) removed.
+The signal "LEFT_RIGHT/sig00000032" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000120" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000053" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000160" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000ad" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000140" (FF) removed.
+The signal "LEFT_RIGHT/sig00000031" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000121" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000052" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000161" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000ac" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000141" (FF) removed.
+The signal "LEFT_RIGHT/sig00000030" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000122" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000051" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000162" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000ab" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000142" (FF) removed.
+The signal "LEFT_RIGHT/sig0000002f" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000123" (FF) removed.
+  The signal "LEFT_RIGHT/sig00000050" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000163" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000aa" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000143" (FF) removed.
+The signal "LEFT_RIGHT/sig0000002e" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000124" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000004f" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000164" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000a9" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000144" (FF) removed.
+The signal "LEFT_RIGHT/sig0000002d" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000125" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000004e" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000165" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000a8" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000145" (FF) removed.
+The signal "LEFT_RIGHT/sig0000002c" is sourceless and has been removed.
+ Sourceless block "LEFT_RIGHT/blk00000126" (FF) removed.
+  The signal "LEFT_RIGHT/sig0000004d" is sourceless and has been removed.
+   Sourceless block "LEFT_RIGHT/blk00000166" (FF) removed.
+    The signal "LEFT_RIGHT/sig000000a7" is sourceless and has been removed.
+     Sourceless block "LEFT_RIGHT/blk00000146" (FF) removed.
 
 The trimmed logic reported below is either:
    1. part of a cycle
@@ -1388,6 +1668,32 @@ Unused block "BOTTOM_UP/blk00000021" (FF) removed.
 Unused block "BOTTOM_UP/blk00000022" (FF) removed.
 Unused block "BOTTOM_UP/blk00000167" (RAMB8BWER) removed.
 Unused block "DDC_SCL_IOBUF/OBUFT" (TRI) removed.
+Unused block "LEFT_RIGHT/blk00000001" (ONE) removed.
+Unused block "LEFT_RIGHT/blk00000044/blk000000a3" (MUX) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000a8" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000ab" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000ae" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000b1" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000b4" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000b7" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000ba" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000bd" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000c0" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000c3" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000c6" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000c9" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000cc" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000cf" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000d2" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000d5" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000d8" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000db" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000de" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000e1" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000e4" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk000000e7" (XOR) removed.
+Unused block "LEFT_RIGHT/blk000000a5/blk00000104" (MUX) removed.
+Unused block "LEFT_RIGHT/blk00000167" (RAMB8BWER) removed.
 Unused block "UP_DOWN/blk00000001" (ONE) removed.
 Unused block "UP_DOWN/blk00000044/blk000000a3" (MUX) removed.
 Unused block "UP_DOWN/blk000000a5/blk000000a8" (XOR) removed.
@@ -1417,14 +1723,49 @@ Unused block "UP_DOWN/blk00000167" (RAMB8BWER) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		LEFT_RIGHT/blk00000002
+FD 		LEFT_RIGHT/blk00000006
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000000a
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000000b
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000000c
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000000e
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000000f
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000010
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000012
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000013
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000014
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000016
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000017
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000018
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000001a
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000001b
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000001c
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000001e
+   optimized to 0
+FD 		LEFT_RIGHT/blk0000001f
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000020
+   optimized to 0
+FD 		LEFT_RIGHT/blk00000022
+   optimized to 0
 GND 		UP_DOWN/blk00000002
 FD 		UP_DOWN/blk00000006
-   optimized to 0
-FD 		UP_DOWN/blk00000007
-   optimized to 0
-FD 		UP_DOWN/blk00000008
-   optimized to 0
-FD 		UP_DOWN/blk00000009
    optimized to 0
 FD 		UP_DOWN/blk0000000a
    optimized to 0
@@ -1432,17 +1773,37 @@ FD 		UP_DOWN/blk0000000b
    optimized to 0
 FD 		UP_DOWN/blk0000000c
    optimized to 0
-FD 		UP_DOWN/blk0000000d
-   optimized to 0
 FD 		UP_DOWN/blk0000000e
    optimized to 0
 FD 		UP_DOWN/blk0000000f
    optimized to 0
 FD 		UP_DOWN/blk00000010
    optimized to 0
-FD 		UP_DOWN/blk00000011
-   optimized to 0
 FD 		UP_DOWN/blk00000012
+   optimized to 0
+FD 		UP_DOWN/blk00000013
+   optimized to 0
+FD 		UP_DOWN/blk00000014
+   optimized to 0
+FD 		UP_DOWN/blk00000016
+   optimized to 0
+FD 		UP_DOWN/blk00000017
+   optimized to 0
+FD 		UP_DOWN/blk00000018
+   optimized to 0
+FD 		UP_DOWN/blk0000001a
+   optimized to 0
+FD 		UP_DOWN/blk0000001b
+   optimized to 0
+FD 		UP_DOWN/blk0000001c
+   optimized to 0
+FD 		UP_DOWN/blk0000001e
+   optimized to 0
+FD 		UP_DOWN/blk0000001f
+   optimized to 0
+FD 		UP_DOWN/blk00000020
+   optimized to 0
+FD 		UP_DOWN/blk00000022
    optimized to 0
 GND 		XST_GND
 VCC 		XST_VCC
