@@ -499,12 +499,13 @@ ddc_edid  DELL15(
       ctmds = ctmds + 1;*/
 		
   //assign LED[7:0] = {2'b00, MSW, crx0[15], cpll[5], cpll25[23], ctmds[24], rx0_psalgnerr};
-  //assign LED = {1'b1, sync_out_1, sync_in_1, sync_out_2, sync_in_2, lcntr[25], rMODE};
+  assign LED = {1'b1, sync_out_1, sync_in_1, sync_out_2, sync_in_2, lcntr[25], rMODE};
+  //***************** For test use only, test the EEPROM loaded LUT *****************
   reg [9:0] idx = 0;
   reg [31:0] pcnt = 0;
   always@(posedge clk25)
   begin
-		if(m==1025) begin
+		if(m==1024) begin
 			if(pcnt<20000000)
 				pcnt = pcnt + 1;
 			else begin
@@ -520,7 +521,7 @@ ddc_edid  DELL15(
 			idx = 0;
 		end
   end
-  assign LED = lut[1023-idx][7:0];
+  //assign LED = lut[1023-idx][7:0];
 //******************* Below is the Structured Light output ***************************
 wire sync_hs, sync_vs, de;
 wire [7:0] cosd3;
@@ -551,6 +552,7 @@ assign sync_vs = (V_polarity == 1'b1) ? rx0_vsync : ~rx0_vsync;
 //************************* Use "ENABLE" bit to switch ************************
 reg [15:0] frame1 = 0;
 wire [31:0] phout, phvout;
+wire rstb;
 always@(posedge rx0_pllclk1)
 begin
 		if(sync_vs)
@@ -570,14 +572,14 @@ hdmi_sl  HDMI1_PC_CLK(
 					.SYNC_V					(sync_vs),
 					.DE						(de),
 					
-					.oRequest				(/*rstb*/),				//signal to reset the DDS
+					.oRequest				(rstb),				//signal to reset the DDS
 					.tmdso					(),
 					.tmds_30b				()
 );
 
 ddsc UP_DOWN(
 			.clk				(sync_hs),
-			.sclr				(~sync_vs),
+			.sclr				(~rstb),
 			
 			.pinc_in			(phase_i),
 			.poff_in			(phase_o),
@@ -690,7 +692,7 @@ wire [7:0] rx_spi;
 
 reg new_tx_data = 0;
 reg [10:0] m = 0;
-wire [10:0] nn;
+wire spi_bss;
 
 avr_interface#(.CLK_RATE(50000000), .SERIAL_BAUD_RATE(500000))
 INSTANTIATION1(
@@ -730,28 +732,24 @@ INSTANTIATION1(
 );
 
 /*** SPI receiver used to load the LUT of the projector ***/
-assign nn = m - 1;
-always@(posedge new_spi)
+edgedtct SPI_ON_REC(
+				.clk		(CLK_40M),
+				.signl	(new_spi),
+				.re		(spi_bss)
+);
+
+always@(posedge CLK_40M)
 begin
-	if(m==0) begin
-		m = m + 1;
-	end	
-	else if(m<1023) begin //n=1023 after all new_spi
-		lut[nn[9:0]]  = rx_spi;
-		m  = m + 1;
-	end
-	else if(m==1023)
+	if(spi_bss)
 	begin
-		lut[nn[9:0]]  = rx_spi;
-		m = m + 1;
+		if(m<=1023)
+		begin
+			lut[m] = rx_spi;
+			m = m + 1;
+		end
+		else
+			m = m;
 	end
-	else if(m==1024)
-	begin
-		lut[nn[9:0]]  = rx_spi;
-		m = m + 1;
-	end
-	else
-		m = m;
 end
 /**********************************************************/
 always@(posedge new_data or posedge new_tx_data)
@@ -1013,7 +1011,7 @@ assign sync_out_1slr = (stchp==1'b1) ? SYNC_VS : 0;
          refer to the email on 8/13/2018 titled "horizontal patterns" from Dr. Lau */
 `ifdef TIDLP
 //H_increment: 6826.66, V_increment: 6826.66 ^^^ R: [0, 480] [0, 480] ^^^ C: [0,960], [53, 907]
-parameter PHASE_OFFSET08H = 32'd0;	         parameter PHASE_OFFSET18H = 32'd536870912;	parameter PHASE_INC_H1  = 32'd8947849; 
+parameter PHASE_OFFSET08H = 32'd0;	         parameter PHASE_OFFSET18H = 32'd536870912;	parameter PHASE_INC_H1  = 32'd8947848; 
 parameter PHASE_OFFSET28H = 32'd1073741824;  parameter PHASE_OFFSET38H = 32'd1610612736;	parameter PHASE_INC_H6  = 32'd53687091;
 parameter PHASE_OFFSET48H = 32'd2147483648;  parameter PHASE_OFFSET58H = 32'd2684354560;	parameter PHASE_INC_H30 = 32'd268435456;
 parameter PHASE_OFFSET68H = 32'd3221225472;  parameter PHASE_OFFSET78H = 32'd3758096384;
@@ -1153,8 +1151,8 @@ end
 assign sync_out_1 = (sync_in_1==1) ? sync_out_1slr : sync_out_1pc;
 assign sync_out_2 = (sync_in_1==1) ? sync_out_2sl : sync_out_2pc;
 
-assign sync_out_1B2 = rx0_vsync;
-assign sync_out_2B2 = (sync_in_1B2==1) ? sync_out_2 : ((sync_in_2B2==1) ? 1 : 0);
+assign sync_out_1B2 = sync_out_1;				//reserved for dual-camera research
+assign sync_out_2B2 = sync_out_2;
 /************************ 5. watchdog timer that is 
 									  used to determine the clock source *************/
 reg [31:0] wdt_timer = 0;
@@ -1203,13 +1201,12 @@ begin
 end
 /***** 6. structured light patterns generated from external programmable oscillator *****/
 wire goo;
-wire [7:0] cosd3e;
 wire [7:0] hdata_e;
 wire pll_locked, wlock;
 wire [31:0] phase_ie, phase_oe;
 
 reg [7:0] zdata = 0;
-reg [31:0] pout_me = 0;
+wire [31:0] pout_me;
 
 i2c_master	PROGRAMMABLE_OSC(
 								.CLOCK_IN				(CLOCK100),
@@ -1226,27 +1223,12 @@ ddsc BOTTOM_UP(
 			.clk				(po_hsync),
 			.sclr				((!dds_start) || (!goo)),
 			
-			.pinc_in			(phase_i),
-			.poff_in			(phase_o),
-			.cosine			(cosd3e),
-			.phase_out		()
+			.pinc_in			(phase_ie),
+			.poff_in			(phase_oe),
+			.cosine			(),
+			.phase_out		(pout_me)
 );
 /**********************************************/
-always@(posedge clkext)
-begin
-		if(!cosd3e[7])
-				zdata = cosd3e + 128;
-		else
-				zdata = cosd3e[6:0];
-end
-
-always@(posedge po_hsync or negedge po_vsync)				//horizontal stripes
-begin
-	if(!po_vsync)
-		pout_me = phase_oe;
-	else
-		pout_me = pout_me + phase_ie;
-end
 assign hdata_e = lut[pout_me[31:22]];
 
 assign phase_ie = ((frame1 < 24) || ((frame1 > 27) && (frame1 < 52))) ? phase_incE : 32'd0;
@@ -1258,7 +1240,7 @@ hdmi_top HDMI1_EXT_CLK(
 					.HDMI_START				(dds_start),
 					
 					.iRed						(8'h00),
-					.iGreen					(hdata_e),				//zdata
+					.iGreen					(hdata_e),
 					.iBlue					(8'h00),
 					
 					.oRequest				(goo),

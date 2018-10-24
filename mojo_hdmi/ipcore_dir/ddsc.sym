@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="ddsc">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-10-4T20:27:43</timestamp>
+    <timestamp>2018-10-24T16:39:10</timestamp>
     <pin polarity="Input" x="0" y="80" name="clk" />
     <pin polarity="Input" x="0" y="144" name="sclr" />
     <pin polarity="Output" x="352" y="208" name="cosine[7:0]" />

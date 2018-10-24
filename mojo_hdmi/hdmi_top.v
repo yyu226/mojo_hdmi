@@ -159,6 +159,7 @@ always@(posedge clock_pixel)
 assign oRequest = (contY == VAPIX+VFPOR+VSPUL+VBPOR-1) || (contY < VAPIX);
 assign SYNC_H = ~syncH;
 assign SYNC_V = ~syncV;
+assign DE = actvA;
 //*********** Pattern to Display ****************
 assign red = {contX[5:0] & {6{contY[4:3] == ~contX[4:3]}}, 2'b00};
 assign green = contX[7:0] & {8{contY[6]}};

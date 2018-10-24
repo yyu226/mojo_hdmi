@@ -10,46 +10,46 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct 12 17:20:44 2018
+Mapped Date    : Wed Oct 24 12:49:46 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   82
+Number of warnings:   77
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,328 out of  11,440   11%
-    Number used as Flip Flops:               1,309
-    Number used as Latches:                     19
+  Number of Slice Registers:                 1,362 out of  11,440   11%
+    Number used as Flip Flops:               1,346
+    Number used as Latches:                     16
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,061 out of   5,720   36%
-    Number used as logic:                    1,492 out of   5,720   26%
-      Number using O6 output only:             869
-      Number using O5 output only:             285
-      Number using O5 and O6:                  338
+  Number of Slice LUTs:                      2,065 out of   5,720   36%
+    Number used as logic:                    1,458 out of   5,720   25%
+      Number using O6 output only:             861
+      Number using O5 output only:             283
+      Number using O5 and O6:                  314
       Number used as ROM:                        0
-    Number used as Memory:                     460 out of   1,440   31%
-      Number used as Dual Port RAM:            460
-        Number using O6 output only:           404
+    Number used as Memory:                     448 out of   1,440   31%
+      Number used as Dual Port RAM:            448
+        Number using O6 output only:           392
         Number using O5 output only:             0
         Number using O5 and O6:                 56
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:    109
-      Number with same-slice register load:     46
-      Number with same-slice carry load:        63
+    Number used exclusively as route-thrus:    159
+      Number with same-slice register load:     55
+      Number with same-slice carry load:       104
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   667 out of   1,430   46%
-  Number of MUXCYs used:                       552 out of   2,860   19%
-  Number of LUT Flip Flop pairs used:        2,219
-    Number with an unused Flip Flop:         1,051 out of   2,219   47%
-    Number with an unused LUT:                 158 out of   2,219    7%
-    Number of fully used LUT-FF pairs:       1,010 out of   2,219   45%
-    Number of unique control sets:             185
+  Number of occupied Slices:                   691 out of   1,430   48%
+  Number of MUXCYs used:                       580 out of   2,860   20%
+  Number of LUT Flip Flop pairs used:        2,223
+    Number with an unused Flip Flop:         1,028 out of   2,223   46%
+    Number with an unused LUT:                 158 out of   2,223    7%
+    Number of fully used LUT-FF pairs:       1,037 out of   2,223   46%
+    Number of unique control sets:             176
     Number of slice register sites lost
-      to control set restrictions:             812 out of  11,440    7%
+      to control set restrictions:             750 out of  11,440    6%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -100,11 +100,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.03
+Average Fanout of Non-Clock Nets:                3.99
 
-Peak Memory Usage:  4651 MB
-Total REAL time to MAP completion:  17 secs 
-Total CPU time to MAP completion:   17 secs 
+Peak Memory Usage:  4650 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   20 secs 
 
 Table of Contents
 -----------------
@@ -130,7 +130,7 @@ Section 2 - Warnings
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <clk100> is placed at site <P56>. The corresponding BUFG
-   component <inbufg> is placed at site <BUFGMUX_X3Y16>. There is only a select
+   component <inbufg> is placed at site <BUFGMUX_X3Y13>. There is only a select
    set of IOBs that can use the fast path to the Clocker buffer, and they are
    not being used. You may want to analyze why this problem exists and correct
    it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
@@ -142,7 +142,7 @@ WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <RX0_TMDS<3>> is placed at site <P121>. The corresponding BUFG
-   component <dvi_rx0/tmdsclk_bufg> is placed at site <BUFGMUX_X3Y5>. There is
+   component <dvi_rx0/tmdsclk_bufg> is placed at site <BUFGMUX_X3Y7>. There is
    only a select set of IOBs that can use the fast path to the Clocker buffer,
    and they are not being used. You may want to analyze why this problem exists
    and correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
@@ -154,20 +154,22 @@ WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <DDC_SCL> is placed at site <P112>. The corresponding BUFG
-   component <N821_BUFG> is placed at site <BUFGMUX_X2Y2>. There is only a
-   select set of IOBs that can use the fast path to the Clocker buffer, and they
-   are not being used. You may want to analyze why this problem exists and
-   correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
-   constraint was applied on COMP.PIN <DDC_SCL.PAD> allowing your design to
-   continue. This constraint disables all clock placer rules related to the
-   specified COMP.PIN. The use of this override is highly discouraged as it may
-   lead to very poor timing results. It is recommended that this error condition
-   be corrected in the design.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   po_vsync_phase_oe[30]_AND_122_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net _n0776 is sourced by a
+   component <N80_BUFG> is placed at site <BUFGMUX_X3Y6>. There is only a select
+   set of IOBs that can use the fast path to the Clocker buffer, and they are
+   not being used. You may want to analyze why this problem exists and correct
+   it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <DDC_SCL.PAD> allowing your design to continue. This
+   constraint disables all clock placer rules related to the specified COMP.PIN.
+   The use of this override is highly discouraged as it may lead to very poor
+   timing results. It is recommended that this error condition be corrected in
+   the design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _n0633 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dvi_rx0/dec_b/c1 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net SYNC_VS is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -175,21 +177,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   po_vsync_phase_oe[29]_AND_124_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    OPTOMA/cSTATE[4]_GND_8_o_Mux_31_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net dvi_rx0/dec_b/c1 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net SYNC_VS is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net LED<5>_inv is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_in_1_inv is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net sync_hs is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
@@ -205,153 +197,145 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    OPTOMA/cSTATE[4]_GND_7_o_Mux_30_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   po_vsync_phase_oe[31]_AND_120_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut13_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut115_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut15_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut110_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut17_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut112_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut117_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut123_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut121_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut126_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut131_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut132_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut119_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut114_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut111_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut26_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_lut18_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut19_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut3_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut10_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut15_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut2_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_lut11_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut125_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut127_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut13_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_lut16_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut122_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut21_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut130_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut20_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut118_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut19_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut116_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut29_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut14_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut24_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut129_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut28_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut124_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut5_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut120_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut17_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut42_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut23_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut22_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut33_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut25_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut30_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut32_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut31_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut9_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut4_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut8_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_lut12_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut7_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut6_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut131_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut27_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut14_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut139_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut110_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut124_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut122_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut114_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut115_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut118_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut125_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut117_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_lut113_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut222_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut119_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut211_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut112_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut223_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut138_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut214_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut127_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut221_RAMD_O> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <Mram_lut141_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut130_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut133_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut140_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut126_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut129_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut123_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut111_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut120_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut116_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut121_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut137_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut136_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut132_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut135_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_lut134_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_lut128_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut237_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut228_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut230_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut227_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut26_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut217_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut212_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut215_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut224_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut240_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut231_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut239_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut234_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut233_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut238_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut218_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut225_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut213_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut210_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut216_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut220_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut219_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut229_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut236_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut232_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut235_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut226_RAMD_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_lut241_RAMD_O> is incomplete. The
    signal does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network AVR_RX_BUSY_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 233 more times for the
+INFO:LIT:243 - Logical network sync_in_1B2_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 223 more times for the
    following (max. 5 shown):
+   sync_in_2B2_IBUF,
+   AVR_RX_BUSY_IBUF,
    UART_RX_IBUF,
-   Mram_lut1331/SPO,
-   Mram_lut1332/SPO,
-   Mram_lut1361/SPO,
-   Mram_lut1362/SPO
+   Mram_lut341/SPO,
+   Mram_lut342/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -373,9 +357,9 @@ INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 553 block(s) removed
-  44 block(s) optimized away
- 569 signal(s) removed
+ 290 block(s) removed
+  74 block(s) optimized away
+ 305 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -392,6 +376,7 @@ the lines that are least indented (begin at the leftmost edge).
 
 Loadless block "CAMERA_TRIG/four" (FF) removed.
 Loadless block "FRAME_TRIGGER_WAIT/four" (FF) removed.
+Loadless block "SPI_ON_REC/four" (FF) removed.
 Loadless block "synchro_sws_0/use_fdc.fdb" (FF) removed.
  The signal "synchro_sws_0/temp" is loadless and has been removed.
   Loadless block "synchro_sws_0/use_fdc.fda" (FF) removed.
@@ -406,26 +391,6 @@ The signal "BOTTOM_UP/cosine<3>" is sourceless and has been removed.
 The signal "BOTTOM_UP/cosine<2>" is sourceless and has been removed.
 The signal "BOTTOM_UP/cosine<1>" is sourceless and has been removed.
 The signal "BOTTOM_UP/cosine<0>" is sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<31>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<30>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<29>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<28>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<27>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<26>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<25>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<24>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<23>" is
-sourceless and has been removed.
-The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<22>" is
-sourceless and has been removed.
 The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<21>" is
 sourceless and has been removed.
 The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<20>" is
@@ -471,777 +436,144 @@ sourceless and has been removed.
 The signal "BOTTOM_UP/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<0>" is
 sourceless and has been removed.
 The signal "BOTTOM_UP/sig00000001" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000002" is sourceless and has been removed.
- Sourceless block "BOTTOM_UP/blk00000044/blk00000046" (MUX) removed.
-  The signal "BOTTOM_UP/blk00000044/sig00000129" is sourceless and has been
-removed.
-   Sourceless block "BOTTOM_UP/blk00000044/blk00000049" (MUX) removed.
-    The signal "BOTTOM_UP/blk00000044/sig0000012b" is sourceless and has been
-removed.
-     Sourceless block "BOTTOM_UP/blk00000044/blk0000004c" (MUX) removed.
-      The signal "BOTTOM_UP/blk00000044/sig0000012d" is sourceless and has been
-removed.
-       Sourceless block "BOTTOM_UP/blk00000044/blk0000004f" (MUX) removed.
-        The signal "BOTTOM_UP/blk00000044/sig0000012f" is sourceless and has been
-removed.
-         Sourceless block "BOTTOM_UP/blk00000044/blk00000052" (MUX) removed.
-          The signal "BOTTOM_UP/blk00000044/sig00000131" is sourceless and has been
-removed.
-           Sourceless block "BOTTOM_UP/blk00000044/blk00000055" (MUX) removed.
-            The signal "BOTTOM_UP/blk00000044/sig00000133" is sourceless and has been
-removed.
-             Sourceless block "BOTTOM_UP/blk00000044/blk00000058" (MUX) removed.
-              The signal "BOTTOM_UP/blk00000044/sig00000135" is sourceless and has been
-removed.
-               Sourceless block "BOTTOM_UP/blk00000044/blk0000005b" (MUX) removed.
-                The signal "BOTTOM_UP/blk00000044/sig00000137" is sourceless and has been
-removed.
-                 Sourceless block "BOTTOM_UP/blk00000044/blk0000005e" (MUX) removed.
-                  The signal "BOTTOM_UP/blk00000044/sig00000139" is sourceless and has been
-removed.
-                   Sourceless block "BOTTOM_UP/blk00000044/blk00000061" (MUX) removed.
-                    The signal "BOTTOM_UP/blk00000044/sig0000013b" is sourceless and has been
-removed.
-                     Sourceless block "BOTTOM_UP/blk00000044/blk00000064" (MUX) removed.
-                      The signal "BOTTOM_UP/blk00000044/sig0000013d" is sourceless and has been
-removed.
-                       Sourceless block "BOTTOM_UP/blk00000044/blk00000067" (MUX) removed.
-                        The signal "BOTTOM_UP/blk00000044/sig0000013f" is sourceless and has been
-removed.
-                         Sourceless block "BOTTOM_UP/blk00000044/blk0000006a" (MUX) removed.
-                          The signal "BOTTOM_UP/blk00000044/sig00000141" is sourceless and has been
-removed.
-                           Sourceless block "BOTTOM_UP/blk00000044/blk0000006d" (MUX) removed.
-                            The signal "BOTTOM_UP/blk00000044/sig00000143" is sourceless and has been
-removed.
-                             Sourceless block "BOTTOM_UP/blk00000044/blk00000070" (MUX) removed.
-                              The signal "BOTTOM_UP/blk00000044/sig00000145" is sourceless and has been
-removed.
-                               Sourceless block "BOTTOM_UP/blk00000044/blk00000073" (MUX) removed.
-                                The signal "BOTTOM_UP/blk00000044/sig00000147" is sourceless and has been
-removed.
-                                 Sourceless block "BOTTOM_UP/blk00000044/blk00000076" (MUX) removed.
-                                  The signal "BOTTOM_UP/blk00000044/sig00000149" is sourceless and has been
-removed.
-                                   Sourceless block "BOTTOM_UP/blk00000044/blk00000079" (MUX) removed.
-                                    The signal "BOTTOM_UP/blk00000044/sig0000014b" is sourceless and has been
-removed.
-                                     Sourceless block "BOTTOM_UP/blk00000044/blk0000007c" (MUX) removed.
-                                      The signal "BOTTOM_UP/blk00000044/sig0000014d" is sourceless and has been
-removed.
-                                       Sourceless block "BOTTOM_UP/blk00000044/blk0000007f" (MUX) removed.
-                                        The signal "BOTTOM_UP/blk00000044/sig0000014f" is sourceless and has been
-removed.
-                                         Sourceless block "BOTTOM_UP/blk00000044/blk00000082" (MUX) removed.
-                                          The signal "BOTTOM_UP/blk00000044/sig00000151" is sourceless and has been
-removed.
-                                           Sourceless block "BOTTOM_UP/blk00000044/blk00000085" (MUX) removed.
-                                            The signal "BOTTOM_UP/blk00000044/sig00000153" is sourceless and has been
-removed.
-                                             Sourceless block "BOTTOM_UP/blk00000044/blk00000088" (MUX) removed.
-                                              The signal "BOTTOM_UP/blk00000044/sig00000155" is sourceless and has been
-removed.
-                                               Sourceless block "BOTTOM_UP/blk00000044/blk0000008b" (MUX) removed.
-                                                The signal "BOTTOM_UP/blk00000044/sig00000157" is sourceless and has been
-removed.
-                                                 Sourceless block "BOTTOM_UP/blk00000044/blk0000008e" (MUX) removed.
-*The signal "BOTTOM_UP/blk00000044/sig00000159" is sourceless and has been
-removed.
-* Sourceless block "BOTTOM_UP/blk00000044/blk00000091" (MUX) removed.
-*  The signal "BOTTOM_UP/blk00000044/sig0000015b" is sourceless and has been
-removed.
-*   Sourceless block "BOTTOM_UP/blk00000044/blk00000094" (MUX) removed.
-*    The signal "BOTTOM_UP/blk00000044/sig0000015d" is sourceless and has been
-removed.
-*     Sourceless block "BOTTOM_UP/blk00000044/blk00000097" (MUX) removed.
-*      The signal "BOTTOM_UP/blk00000044/sig0000015f" is sourceless and has been
-removed.
-*       Sourceless block "BOTTOM_UP/blk00000044/blk0000009a" (MUX) removed.
-*        The signal "BOTTOM_UP/blk00000044/sig00000161" is sourceless and has been
-removed.
-*         Sourceless block "BOTTOM_UP/blk00000044/blk0000009d" (MUX) removed.
-*          The signal "BOTTOM_UP/blk00000044/sig00000163" is sourceless and has been
-removed.
-*           Sourceless block "BOTTOM_UP/blk00000044/blk000000a0" (MUX) removed.
-*            The signal "BOTTOM_UP/blk00000044/sig00000165" is sourceless and has been
-removed.
-*             Sourceless block "BOTTOM_UP/blk00000044/blk000000a3" (MUX) removed.
-*              The signal "BOTTOM_UP/sig0000000b" is sourceless and has been removed.
-*               Sourceless block "BOTTOM_UP/blk00000023" (SFF) removed.
-*                The signal "BOTTOM_UP/sig000000a5" is sourceless and has been removed.
-*             Sourceless block "BOTTOM_UP/blk00000044/blk000000a4" (XOR) removed.
-*              The signal "BOTTOM_UP/sig0000000c" is sourceless and has been removed.
-*               Sourceless block "BOTTOM_UP/blk00000024" (SFF) removed.
-*                The signal "BOTTOM_UP/sig000000a4" is sourceless and has been removed.
-*                 Sourceless block "BOTTOM_UP/blk00000044/blk000000a2" (ROM) removed.
-*                  The signal "BOTTOM_UP/blk00000044/sig00000166" is sourceless and has been
-removed.
-*                 Sourceless block "BOTTOM_UP/blk000000a5/blk00000103" (ROM) removed.
-*                  The signal "BOTTOM_UP/blk000000a5/sig00000207" is sourceless and has been
-removed.
-*                   Sourceless block "BOTTOM_UP/blk000000a5/blk00000104" (MUX) removed.
-*                    The signal "BOTTOM_UP/sig0000004c" is sourceless and has been removed.
-*                     Sourceless block "BOTTOM_UP/blk00000106" (FF) removed.
-*                      The signal "BOTTOM_UP/sig000000a6" is sourceless and has been removed.
-*                   Sourceless block "BOTTOM_UP/blk000000a5/blk00000105" (XOR) removed.
-*                    The signal "BOTTOM_UP/sig0000004b" is sourceless and has been removed.
-*                     Sourceless block "BOTTOM_UP/blk00000107" (FF) removed.
-*                      The signal "BOTTOM_UP/sig00000003" is sourceless and has been removed.
-*                       Sourceless block "BOTTOM_UP/blk00000147" (FF) removed.
-*                        The signal "BOTTOM_UP/sig000000c6" is sourceless and has been removed.
-*                         Sourceless block "BOTTOM_UP/blk00000127" (FF) removed.
-*           Sourceless block "BOTTOM_UP/blk00000044/blk000000a1" (XOR) removed.
-*            The signal "BOTTOM_UP/sig0000000d" is sourceless and has been removed.
-*             Sourceless block "BOTTOM_UP/blk00000025" (SFF) removed.
-*              The signal "BOTTOM_UP/sig000000a3" is sourceless and has been removed.
-*               Sourceless block "BOTTOM_UP/blk00000044/blk0000009f" (ROM) removed.
-*                The signal "BOTTOM_UP/blk00000044/sig00000164" is sourceless and has been
-removed.
-*               Sourceless block "BOTTOM_UP/blk000000a5/blk00000100" (ROM) removed.
-*                The signal "BOTTOM_UP/blk000000a5/sig00000205" is sourceless and has been
-removed.
-*                 Sourceless block "BOTTOM_UP/blk000000a5/blk00000101" (MUX) removed.
-*                  The signal "BOTTOM_UP/blk000000a5/sig00000206" is sourceless and has been
-removed.
-*                 Sourceless block "BOTTOM_UP/blk000000a5/blk00000102" (XOR) removed.
-*                  The signal "BOTTOM_UP/sig0000004a" is sourceless and has been removed.
-*                   Sourceless block "BOTTOM_UP/blk00000108" (FF) removed.
-*                    The signal "BOTTOM_UP/sig00000004" is sourceless and has been removed.
-*                     Sourceless block "BOTTOM_UP/blk00000148" (FF) removed.
-*                      The signal "BOTTOM_UP/sig000000c5" is sourceless and has been removed.
-*                       Sourceless block "BOTTOM_UP/blk00000128" (FF) removed.
-*         Sourceless block "BOTTOM_UP/blk00000044/blk0000009e" (XOR) removed.
-*          The signal "BOTTOM_UP/sig0000000e" is sourceless and has been removed.
-*           Sourceless block "BOTTOM_UP/blk00000026" (SFF) removed.
-*            The signal "BOTTOM_UP/sig000000a2" is sourceless and has been removed.
-*             Sourceless block "BOTTOM_UP/blk00000044/blk0000009c" (ROM) removed.
-*              The signal "BOTTOM_UP/blk00000044/sig00000162" is sourceless and has been
-removed.
-*             Sourceless block "BOTTOM_UP/blk000000a5/blk000000fd" (ROM) removed.
-*              The signal "BOTTOM_UP/blk000000a5/sig00000203" is sourceless and has been
-removed.
-*               Sourceless block "BOTTOM_UP/blk000000a5/blk000000fe" (MUX) removed.
-*                The signal "BOTTOM_UP/blk000000a5/sig00000204" is sourceless and has been
-removed.
-*               Sourceless block "BOTTOM_UP/blk000000a5/blk000000ff" (XOR) removed.
-*                The signal "BOTTOM_UP/sig00000049" is sourceless and has been removed.
-*                 Sourceless block "BOTTOM_UP/blk00000109" (FF) removed.
-*                  The signal "BOTTOM_UP/sig00000005" is sourceless and has been removed.
-*                   Sourceless block "BOTTOM_UP/blk00000149" (FF) removed.
-*                    The signal "BOTTOM_UP/sig000000c4" is sourceless and has been removed.
-*                     Sourceless block "BOTTOM_UP/blk00000129" (FF) removed.
-*       Sourceless block "BOTTOM_UP/blk00000044/blk0000009b" (XOR) removed.
-*        The signal "BOTTOM_UP/sig0000000f" is sourceless and has been removed.
-*         Sourceless block "BOTTOM_UP/blk00000027" (SFF) removed.
-*          The signal "BOTTOM_UP/sig000000a1" is sourceless and has been removed.
-*           Sourceless block "BOTTOM_UP/blk00000044/blk00000099" (ROM) removed.
-*            The signal "BOTTOM_UP/blk00000044/sig00000160" is sourceless and has been
-removed.
-*           Sourceless block "BOTTOM_UP/blk000000a5/blk000000fa" (ROM) removed.
-*            The signal "BOTTOM_UP/blk000000a5/sig00000201" is sourceless and has been
-removed.
-*             Sourceless block "BOTTOM_UP/blk000000a5/blk000000fb" (MUX) removed.
-*              The signal "BOTTOM_UP/blk000000a5/sig00000202" is sourceless and has been
-removed.
-*             Sourceless block "BOTTOM_UP/blk000000a5/blk000000fc" (XOR) removed.
-*              The signal "BOTTOM_UP/sig00000048" is sourceless and has been removed.
-*               Sourceless block "BOTTOM_UP/blk0000010a" (FF) removed.
-*                The signal "BOTTOM_UP/sig00000006" is sourceless and has been removed.
-*                 Sourceless block "BOTTOM_UP/blk0000014a" (FF) removed.
-*                  The signal "BOTTOM_UP/sig000000c3" is sourceless and has been removed.
-*                   Sourceless block "BOTTOM_UP/blk0000012a" (FF) removed.
-*     Sourceless block "BOTTOM_UP/blk00000044/blk00000098" (XOR) removed.
-*      The signal "BOTTOM_UP/sig00000010" is sourceless and has been removed.
-*       Sourceless block "BOTTOM_UP/blk00000028" (SFF) removed.
-*        The signal "BOTTOM_UP/sig000000a0" is sourceless and has been removed.
-*         Sourceless block "BOTTOM_UP/blk00000044/blk00000096" (ROM) removed.
-*          The signal "BOTTOM_UP/blk00000044/sig0000015e" is sourceless and has been
-removed.
-*         Sourceless block "BOTTOM_UP/blk000000a5/blk000000f7" (ROM) removed.
-*          The signal "BOTTOM_UP/blk000000a5/sig000001ff" is sourceless and has been
-removed.
-*           Sourceless block "BOTTOM_UP/blk000000a5/blk000000f8" (MUX) removed.
-*            The signal "BOTTOM_UP/blk000000a5/sig00000200" is sourceless and has been
-removed.
-*           Sourceless block "BOTTOM_UP/blk000000a5/blk000000f9" (XOR) removed.
-*            The signal "BOTTOM_UP/sig00000047" is sourceless and has been removed.
-*             Sourceless block "BOTTOM_UP/blk0000010b" (FF) removed.
-*              The signal "BOTTOM_UP/sig00000007" is sourceless and has been removed.
-*               Sourceless block "BOTTOM_UP/blk0000014b" (FF) removed.
-*                The signal "BOTTOM_UP/sig000000c2" is sourceless and has been removed.
-*                 Sourceless block "BOTTOM_UP/blk0000012b" (FF) removed.
-*   Sourceless block "BOTTOM_UP/blk00000044/blk00000095" (XOR) removed.
-*    The signal "BOTTOM_UP/sig00000011" is sourceless and has been removed.
-*     Sourceless block "BOTTOM_UP/blk00000029" (SFF) removed.
-*      The signal "BOTTOM_UP/sig0000009f" is sourceless and has been removed.
-*       Sourceless block "BOTTOM_UP/blk00000044/blk00000093" (ROM) removed.
-*        The signal "BOTTOM_UP/blk00000044/sig0000015c" is sourceless and has been
-removed.
-*       Sourceless block "BOTTOM_UP/blk000000a5/blk000000f4" (ROM) removed.
-*        The signal "BOTTOM_UP/blk000000a5/sig000001fd" is sourceless and has been
-removed.
-*         Sourceless block "BOTTOM_UP/blk000000a5/blk000000f5" (MUX) removed.
-*          The signal "BOTTOM_UP/blk000000a5/sig000001fe" is sourceless and has been
-removed.
-*         Sourceless block "BOTTOM_UP/blk000000a5/blk000000f6" (XOR) removed.
-*          The signal "BOTTOM_UP/sig00000046" is sourceless and has been removed.
-*           Sourceless block "BOTTOM_UP/blk0000010c" (FF) removed.
-*            The signal "BOTTOM_UP/sig00000008" is sourceless and has been removed.
-*             Sourceless block "BOTTOM_UP/blk0000014c" (FF) removed.
-*              The signal "BOTTOM_UP/sig000000c1" is sourceless and has been removed.
-*               Sourceless block "BOTTOM_UP/blk0000012c" (FF) removed.
-* Sourceless block "BOTTOM_UP/blk00000044/blk00000092" (XOR) removed.
-*  The signal "BOTTOM_UP/sig00000012" is sourceless and has been removed.
-*   Sourceless block "BOTTOM_UP/blk0000002a" (SFF) removed.
-*    The signal "BOTTOM_UP/sig0000009e" is sourceless and has been removed.
-*     Sourceless block "BOTTOM_UP/blk00000044/blk00000090" (ROM) removed.
-*      The signal "BOTTOM_UP/blk00000044/sig0000015a" is sourceless and has been
-removed.
-*     Sourceless block "BOTTOM_UP/blk000000a5/blk000000f1" (ROM) removed.
-*      The signal "BOTTOM_UP/blk000000a5/sig000001fb" is sourceless and has been
-removed.
-*       Sourceless block "BOTTOM_UP/blk000000a5/blk000000f2" (MUX) removed.
-*        The signal "BOTTOM_UP/blk000000a5/sig000001fc" is sourceless and has been
-removed.
-*       Sourceless block "BOTTOM_UP/blk000000a5/blk000000f3" (XOR) removed.
-*        The signal "BOTTOM_UP/sig00000045" is sourceless and has been removed.
-*         Sourceless block "BOTTOM_UP/blk0000010d" (FF) removed.
-*          The signal "BOTTOM_UP/sig00000009" is sourceless and has been removed.
-*           Sourceless block "BOTTOM_UP/blk0000014d" (FF) removed.
-*            The signal "BOTTOM_UP/sig000000c0" is sourceless and has been removed.
-*             Sourceless block "BOTTOM_UP/blk0000012d" (FF) removed.
-                                                 Sourceless block "BOTTOM_UP/blk00000044/blk0000008f" (XOR) removed.
-*The signal "BOTTOM_UP/sig00000013" is sourceless and has been removed.
-* Sourceless block "BOTTOM_UP/blk0000002b" (SFF) removed.
-*  The signal "BOTTOM_UP/sig0000009d" is sourceless and has been removed.
-*   Sourceless block "BOTTOM_UP/blk00000044/blk0000008d" (ROM) removed.
-*    The signal "BOTTOM_UP/blk00000044/sig00000158" is sourceless and has been
-removed.
-*   Sourceless block "BOTTOM_UP/blk000000a5/blk000000ee" (ROM) removed.
-*    The signal "BOTTOM_UP/blk000000a5/sig000001f9" is sourceless and has been
-removed.
-*     Sourceless block "BOTTOM_UP/blk000000a5/blk000000ef" (MUX) removed.
-*      The signal "BOTTOM_UP/blk000000a5/sig000001fa" is sourceless and has been
-removed.
-*     Sourceless block "BOTTOM_UP/blk000000a5/blk000000f0" (XOR) removed.
-*      The signal "BOTTOM_UP/sig00000044" is sourceless and has been removed.
-*       Sourceless block "BOTTOM_UP/blk0000010e" (FF) removed.
-*        The signal "BOTTOM_UP/sig0000000a" is sourceless and has been removed.
-*         Sourceless block "BOTTOM_UP/blk0000014e" (FF) removed.
-*          The signal "BOTTOM_UP/sig000000bf" is sourceless and has been removed.
-*           Sourceless block "BOTTOM_UP/blk0000012e" (FF) removed.
-                                               Sourceless block "BOTTOM_UP/blk00000044/blk0000008c" (XOR) removed.
-                                                The signal "BOTTOM_UP/sig00000014" is sourceless and has been removed.
-                                                 Sourceless block "BOTTOM_UP/blk0000002c" (SFF) removed.
-*The signal "BOTTOM_UP/sig0000009c" is sourceless and has been removed.
-* Sourceless block "BOTTOM_UP/blk00000044/blk0000008a" (ROM) removed.
-*  The signal "BOTTOM_UP/blk00000044/sig00000156" is sourceless and has been
-removed.
-* Sourceless block "BOTTOM_UP/blk000000a5/blk000000eb" (ROM) removed.
-*  The signal "BOTTOM_UP/blk000000a5/sig000001f7" is sourceless and has been
-removed.
-*   Sourceless block "BOTTOM_UP/blk000000a5/blk000000ec" (MUX) removed.
-*    The signal "BOTTOM_UP/blk000000a5/sig000001f8" is sourceless and has been
-removed.
-*   Sourceless block "BOTTOM_UP/blk000000a5/blk000000ed" (XOR) removed.
-*    The signal "BOTTOM_UP/sig00000043" is sourceless and has been removed.
-*     Sourceless block "BOTTOM_UP/blk0000010f" (FF) removed.
-*      The signal "BOTTOM_UP/sig00000064" is sourceless and has been removed.
-*       Sourceless block "BOTTOM_UP/blk0000014f" (FF) removed.
-*        The signal "BOTTOM_UP/sig000000be" is sourceless and has been removed.
-*         Sourceless block "BOTTOM_UP/blk0000012f" (FF) removed.
-                                             Sourceless block "BOTTOM_UP/blk00000044/blk00000089" (XOR) removed.
-                                              The signal "BOTTOM_UP/sig00000015" is sourceless and has been removed.
-                                               Sourceless block "BOTTOM_UP/blk0000002d" (SFF) removed.
-                                                The signal "BOTTOM_UP/sig0000009b" is sourceless and has been removed.
-                                                 Sourceless block "BOTTOM_UP/blk00000044/blk00000087" (ROM) removed.
-*The signal "BOTTOM_UP/blk00000044/sig00000154" is sourceless and has been
-removed.
-                                                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000e8" (ROM) removed.
-*The signal "BOTTOM_UP/blk000000a5/sig000001f5" is sourceless and has been
-removed.
-* Sourceless block "BOTTOM_UP/blk000000a5/blk000000e9" (MUX) removed.
-*  The signal "BOTTOM_UP/blk000000a5/sig000001f6" is sourceless and has been
-removed.
-* Sourceless block "BOTTOM_UP/blk000000a5/blk000000ea" (XOR) removed.
-*  The signal "BOTTOM_UP/sig00000042" is sourceless and has been removed.
-*   Sourceless block "BOTTOM_UP/blk00000110" (FF) removed.
-*    The signal "BOTTOM_UP/sig00000063" is sourceless and has been removed.
-*     Sourceless block "BOTTOM_UP/blk00000150" (FF) removed.
-*      The signal "BOTTOM_UP/sig000000bd" is sourceless and has been removed.
-*       Sourceless block "BOTTOM_UP/blk00000130" (FF) removed.
-                                           Sourceless block "BOTTOM_UP/blk00000044/blk00000086" (XOR) removed.
-                                            The signal "BOTTOM_UP/sig00000016" is sourceless and has been removed.
-                                             Sourceless block "BOTTOM_UP/blk0000002e" (SFF) removed.
-                                              The signal "BOTTOM_UP/sig0000009a" is sourceless and has been removed.
-                                               Sourceless block "BOTTOM_UP/blk00000044/blk00000084" (ROM) removed.
-                                                The signal "BOTTOM_UP/blk00000044/sig00000152" is sourceless and has been
-removed.
-                                               Sourceless block "BOTTOM_UP/blk000000a5/blk000000e5" (ROM) removed.
-                                                The signal "BOTTOM_UP/blk000000a5/sig000001f3" is sourceless and has been
-removed.
-                                                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000e6" (MUX) removed.
-*The signal "BOTTOM_UP/blk000000a5/sig000001f4" is sourceless and has been
-removed.
-                                                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000e7" (XOR) removed.
-*The signal "BOTTOM_UP/sig00000041" is sourceless and has been removed.
-* Sourceless block "BOTTOM_UP/blk00000111" (FF) removed.
-*  The signal "BOTTOM_UP/sig00000062" is sourceless and has been removed.
-*   Sourceless block "BOTTOM_UP/blk00000151" (FF) removed.
-*    The signal "BOTTOM_UP/sig000000bc" is sourceless and has been removed.
-*     Sourceless block "BOTTOM_UP/blk00000131" (FF) removed.
-                                         Sourceless block "BOTTOM_UP/blk00000044/blk00000083" (XOR) removed.
-                                          The signal "BOTTOM_UP/sig00000017" is sourceless and has been removed.
-                                           Sourceless block "BOTTOM_UP/blk0000002f" (SFF) removed.
-                                            The signal "BOTTOM_UP/sig00000099" is sourceless and has been removed.
-                                             Sourceless block "BOTTOM_UP/blk00000044/blk00000081" (ROM) removed.
-                                              The signal "BOTTOM_UP/blk00000044/sig00000150" is sourceless and has been
-removed.
-                                             Sourceless block "BOTTOM_UP/blk000000a5/blk000000e2" (ROM) removed.
-                                              The signal "BOTTOM_UP/blk000000a5/sig000001f1" is sourceless and has been
-removed.
-                                               Sourceless block "BOTTOM_UP/blk000000a5/blk000000e3" (MUX) removed.
-                                                The signal "BOTTOM_UP/blk000000a5/sig000001f2" is sourceless and has been
-removed.
-                                               Sourceless block "BOTTOM_UP/blk000000a5/blk000000e4" (XOR) removed.
-                                                The signal "BOTTOM_UP/sig00000040" is sourceless and has been removed.
-                                                 Sourceless block "BOTTOM_UP/blk00000112" (FF) removed.
-*The signal "BOTTOM_UP/sig00000061" is sourceless and has been removed.
-* Sourceless block "BOTTOM_UP/blk00000152" (FF) removed.
-*  The signal "BOTTOM_UP/sig000000bb" is sourceless and has been removed.
-*   Sourceless block "BOTTOM_UP/blk00000132" (FF) removed.
-                                       Sourceless block "BOTTOM_UP/blk00000044/blk00000080" (XOR) removed.
-                                        The signal "BOTTOM_UP/sig00000018" is sourceless and has been removed.
-                                         Sourceless block "BOTTOM_UP/blk00000030" (SFF) removed.
-                                          The signal "BOTTOM_UP/sig00000098" is sourceless and has been removed.
-                                           Sourceless block "BOTTOM_UP/blk00000044/blk0000007e" (ROM) removed.
-                                            The signal "BOTTOM_UP/blk00000044/sig0000014e" is sourceless and has been
-removed.
-                                           Sourceless block "BOTTOM_UP/blk000000a5/blk000000df" (ROM) removed.
-                                            The signal "BOTTOM_UP/blk000000a5/sig000001ef" is sourceless and has been
-removed.
-                                             Sourceless block "BOTTOM_UP/blk000000a5/blk000000e0" (MUX) removed.
-                                              The signal "BOTTOM_UP/blk000000a5/sig000001f0" is sourceless and has been
-removed.
-                                             Sourceless block "BOTTOM_UP/blk000000a5/blk000000e1" (XOR) removed.
-                                              The signal "BOTTOM_UP/sig0000003f" is sourceless and has been removed.
-                                               Sourceless block "BOTTOM_UP/blk00000113" (FF) removed.
-                                                The signal "BOTTOM_UP/sig00000060" is sourceless and has been removed.
-                                                 Sourceless block "BOTTOM_UP/blk00000153" (FF) removed.
-*The signal "BOTTOM_UP/sig000000ba" is sourceless and has been removed.
-* Sourceless block "BOTTOM_UP/blk00000133" (FF) removed.
-                                     Sourceless block "BOTTOM_UP/blk00000044/blk0000007d" (XOR) removed.
-                                      The signal "BOTTOM_UP/sig00000019" is sourceless and has been removed.
-                                       Sourceless block "BOTTOM_UP/blk00000031" (SFF) removed.
-                                        The signal "BOTTOM_UP/sig00000097" is sourceless and has been removed.
-                                         Sourceless block "BOTTOM_UP/blk00000044/blk0000007b" (ROM) removed.
-                                          The signal "BOTTOM_UP/blk00000044/sig0000014c" is sourceless and has been
-removed.
-                                         Sourceless block "BOTTOM_UP/blk000000a5/blk000000dc" (ROM) removed.
-                                          The signal "BOTTOM_UP/blk000000a5/sig000001ed" is sourceless and has been
-removed.
-                                           Sourceless block "BOTTOM_UP/blk000000a5/blk000000dd" (MUX) removed.
-                                            The signal "BOTTOM_UP/blk000000a5/sig000001ee" is sourceless and has been
-removed.
-                                           Sourceless block "BOTTOM_UP/blk000000a5/blk000000de" (XOR) removed.
-                                            The signal "BOTTOM_UP/sig0000003e" is sourceless and has been removed.
-                                             Sourceless block "BOTTOM_UP/blk00000114" (FF) removed.
-                                              The signal "BOTTOM_UP/sig0000005f" is sourceless and has been removed.
-                                               Sourceless block "BOTTOM_UP/blk00000154" (FF) removed.
-                                                The signal "BOTTOM_UP/sig000000b9" is sourceless and has been removed.
-                                                 Sourceless block "BOTTOM_UP/blk00000134" (FF) removed.
-                                   Sourceless block "BOTTOM_UP/blk00000044/blk0000007a" (XOR) removed.
-                                    The signal "BOTTOM_UP/sig0000001a" is sourceless and has been removed.
-                                     Sourceless block "BOTTOM_UP/blk00000032" (SFF) removed.
-                                      The signal "BOTTOM_UP/sig00000096" is sourceless and has been removed.
-                                       Sourceless block "BOTTOM_UP/blk00000044/blk00000078" (ROM) removed.
-                                        The signal "BOTTOM_UP/blk00000044/sig0000014a" is sourceless and has been
-removed.
-                                       Sourceless block "BOTTOM_UP/blk000000a5/blk000000d9" (ROM) removed.
-                                        The signal "BOTTOM_UP/blk000000a5/sig000001eb" is sourceless and has been
-removed.
-                                         Sourceless block "BOTTOM_UP/blk000000a5/blk000000da" (MUX) removed.
-                                          The signal "BOTTOM_UP/blk000000a5/sig000001ec" is sourceless and has been
-removed.
-                                         Sourceless block "BOTTOM_UP/blk000000a5/blk000000db" (XOR) removed.
-                                          The signal "BOTTOM_UP/sig0000003d" is sourceless and has been removed.
-                                           Sourceless block "BOTTOM_UP/blk00000115" (FF) removed.
-                                            The signal "BOTTOM_UP/sig0000005e" is sourceless and has been removed.
-                                             Sourceless block "BOTTOM_UP/blk00000155" (FF) removed.
-                                              The signal "BOTTOM_UP/sig000000b8" is sourceless and has been removed.
-                                               Sourceless block "BOTTOM_UP/blk00000135" (FF) removed.
-                                 Sourceless block "BOTTOM_UP/blk00000044/blk00000077" (XOR) removed.
-                                  The signal "BOTTOM_UP/sig0000001b" is sourceless and has been removed.
-                                   Sourceless block "BOTTOM_UP/blk00000033" (SFF) removed.
-                                    The signal "BOTTOM_UP/sig00000095" is sourceless and has been removed.
-                                     Sourceless block "BOTTOM_UP/blk00000044/blk00000075" (ROM) removed.
-                                      The signal "BOTTOM_UP/blk00000044/sig00000148" is sourceless and has been
-removed.
-                                     Sourceless block "BOTTOM_UP/blk000000a5/blk000000d6" (ROM) removed.
-                                      The signal "BOTTOM_UP/blk000000a5/sig000001e9" is sourceless and has been
-removed.
-                                       Sourceless block "BOTTOM_UP/blk000000a5/blk000000d7" (MUX) removed.
-                                        The signal "BOTTOM_UP/blk000000a5/sig000001ea" is sourceless and has been
-removed.
-                                       Sourceless block "BOTTOM_UP/blk000000a5/blk000000d8" (XOR) removed.
-                                        The signal "BOTTOM_UP/sig0000003c" is sourceless and has been removed.
-                                         Sourceless block "BOTTOM_UP/blk00000116" (FF) removed.
-                                          The signal "BOTTOM_UP/sig0000005d" is sourceless and has been removed.
-                                           Sourceless block "BOTTOM_UP/blk00000156" (FF) removed.
-                                            The signal "BOTTOM_UP/sig000000b7" is sourceless and has been removed.
-                                             Sourceless block "BOTTOM_UP/blk00000136" (FF) removed.
-                               Sourceless block "BOTTOM_UP/blk00000044/blk00000074" (XOR) removed.
-                                The signal "BOTTOM_UP/sig0000001c" is sourceless and has been removed.
-                                 Sourceless block "BOTTOM_UP/blk00000034" (SFF) removed.
-                                  The signal "BOTTOM_UP/sig00000094" is sourceless and has been removed.
-                                   Sourceless block "BOTTOM_UP/blk00000044/blk00000072" (ROM) removed.
-                                    The signal "BOTTOM_UP/blk00000044/sig00000146" is sourceless and has been
-removed.
-                                   Sourceless block "BOTTOM_UP/blk000000a5/blk000000d3" (ROM) removed.
-                                    The signal "BOTTOM_UP/blk000000a5/sig000001e7" is sourceless and has been
-removed.
-                                     Sourceless block "BOTTOM_UP/blk000000a5/blk000000d4" (MUX) removed.
-                                      The signal "BOTTOM_UP/blk000000a5/sig000001e8" is sourceless and has been
-removed.
-                                     Sourceless block "BOTTOM_UP/blk000000a5/blk000000d5" (XOR) removed.
-                                      The signal "BOTTOM_UP/sig0000003b" is sourceless and has been removed.
-                                       Sourceless block "BOTTOM_UP/blk00000117" (FF) removed.
-                                        The signal "BOTTOM_UP/sig0000005c" is sourceless and has been removed.
-                                         Sourceless block "BOTTOM_UP/blk00000157" (FF) removed.
-                                          The signal "BOTTOM_UP/sig000000b6" is sourceless and has been removed.
-                                           Sourceless block "BOTTOM_UP/blk00000137" (FF) removed.
-                             Sourceless block "BOTTOM_UP/blk00000044/blk00000071" (XOR) removed.
-                              The signal "BOTTOM_UP/sig0000001d" is sourceless and has been removed.
-                               Sourceless block "BOTTOM_UP/blk00000035" (SFF) removed.
-                                The signal "BOTTOM_UP/sig00000093" is sourceless and has been removed.
-                                 Sourceless block "BOTTOM_UP/blk00000044/blk0000006f" (ROM) removed.
-                                  The signal "BOTTOM_UP/blk00000044/sig00000144" is sourceless and has been
-removed.
-                                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000d0" (ROM) removed.
-                                  The signal "BOTTOM_UP/blk000000a5/sig000001e5" is sourceless and has been
-removed.
-                                   Sourceless block "BOTTOM_UP/blk000000a5/blk000000d1" (MUX) removed.
-                                    The signal "BOTTOM_UP/blk000000a5/sig000001e6" is sourceless and has been
-removed.
-                                   Sourceless block "BOTTOM_UP/blk000000a5/blk000000d2" (XOR) removed.
-                                    The signal "BOTTOM_UP/sig0000003a" is sourceless and has been removed.
-                                     Sourceless block "BOTTOM_UP/blk00000118" (FF) removed.
-                                      The signal "BOTTOM_UP/sig0000005b" is sourceless and has been removed.
-                                       Sourceless block "BOTTOM_UP/blk00000158" (FF) removed.
-                                        The signal "BOTTOM_UP/sig000000b5" is sourceless and has been removed.
-                                         Sourceless block "BOTTOM_UP/blk00000138" (FF) removed.
-                           Sourceless block "BOTTOM_UP/blk00000044/blk0000006e" (XOR) removed.
-                            The signal "BOTTOM_UP/sig0000001e" is sourceless and has been removed.
-                             Sourceless block "BOTTOM_UP/blk00000036" (SFF) removed.
-                              The signal "BOTTOM_UP/sig00000092" is sourceless and has been removed.
-                               Sourceless block "BOTTOM_UP/blk00000044/blk0000006c" (ROM) removed.
-                                The signal "BOTTOM_UP/blk00000044/sig00000142" is sourceless and has been
-removed.
-                               Sourceless block "BOTTOM_UP/blk000000a5/blk000000cd" (ROM) removed.
-                                The signal "BOTTOM_UP/blk000000a5/sig000001e3" is sourceless and has been
-removed.
-                                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000ce" (MUX) removed.
-                                  The signal "BOTTOM_UP/blk000000a5/sig000001e4" is sourceless and has been
-removed.
-                                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000cf" (XOR) removed.
-                                  The signal "BOTTOM_UP/sig00000039" is sourceless and has been removed.
-                                   Sourceless block "BOTTOM_UP/blk00000119" (FF) removed.
-                                    The signal "BOTTOM_UP/sig0000005a" is sourceless and has been removed.
-                                     Sourceless block "BOTTOM_UP/blk00000159" (FF) removed.
-                                      The signal "BOTTOM_UP/sig000000b4" is sourceless and has been removed.
-                                       Sourceless block "BOTTOM_UP/blk00000139" (FF) removed.
-                         Sourceless block "BOTTOM_UP/blk00000044/blk0000006b" (XOR) removed.
-                          The signal "BOTTOM_UP/sig0000001f" is sourceless and has been removed.
-                           Sourceless block "BOTTOM_UP/blk00000037" (SFF) removed.
-                            The signal "BOTTOM_UP/sig00000091" is sourceless and has been removed.
-                             Sourceless block "BOTTOM_UP/blk00000044/blk00000069" (ROM) removed.
-                              The signal "BOTTOM_UP/blk00000044/sig00000140" is sourceless and has been
-removed.
-                             Sourceless block "BOTTOM_UP/blk000000a5/blk000000ca" (ROM) removed.
-                              The signal "BOTTOM_UP/blk000000a5/sig000001e1" is sourceless and has been
-removed.
-                               Sourceless block "BOTTOM_UP/blk000000a5/blk000000cb" (MUX) removed.
-                                The signal "BOTTOM_UP/blk000000a5/sig000001e2" is sourceless and has been
-removed.
-                               Sourceless block "BOTTOM_UP/blk000000a5/blk000000cc" (XOR) removed.
-                                The signal "BOTTOM_UP/sig00000038" is sourceless and has been removed.
-                                 Sourceless block "BOTTOM_UP/blk0000011a" (FF) removed.
-                                  The signal "BOTTOM_UP/sig00000059" is sourceless and has been removed.
-                                   Sourceless block "BOTTOM_UP/blk0000015a" (FF) removed.
-                                    The signal "BOTTOM_UP/sig000000b3" is sourceless and has been removed.
-                                     Sourceless block "BOTTOM_UP/blk0000013a" (FF) removed.
-                       Sourceless block "BOTTOM_UP/blk00000044/blk00000068" (XOR) removed.
-                        The signal "BOTTOM_UP/sig00000020" is sourceless and has been removed.
-                         Sourceless block "BOTTOM_UP/blk00000038" (SFF) removed.
-                          The signal "BOTTOM_UP/sig00000090" is sourceless and has been removed.
-                           Sourceless block "BOTTOM_UP/blk00000044/blk00000066" (ROM) removed.
-                            The signal "BOTTOM_UP/blk00000044/sig0000013e" is sourceless and has been
-removed.
-                           Sourceless block "BOTTOM_UP/blk000000a5/blk000000c7" (ROM) removed.
-                            The signal "BOTTOM_UP/blk000000a5/sig000001df" is sourceless and has been
-removed.
-                             Sourceless block "BOTTOM_UP/blk000000a5/blk000000c8" (MUX) removed.
-                              The signal "BOTTOM_UP/blk000000a5/sig000001e0" is sourceless and has been
-removed.
-                             Sourceless block "BOTTOM_UP/blk000000a5/blk000000c9" (XOR) removed.
-                              The signal "BOTTOM_UP/sig00000037" is sourceless and has been removed.
-                               Sourceless block "BOTTOM_UP/blk0000011b" (FF) removed.
-                                The signal "BOTTOM_UP/sig00000058" is sourceless and has been removed.
-                                 Sourceless block "BOTTOM_UP/blk0000015b" (FF) removed.
-                                  The signal "BOTTOM_UP/sig000000b2" is sourceless and has been removed.
-                                   Sourceless block "BOTTOM_UP/blk0000013b" (FF) removed.
-                     Sourceless block "BOTTOM_UP/blk00000044/blk00000065" (XOR) removed.
-                      The signal "BOTTOM_UP/sig00000021" is sourceless and has been removed.
-                       Sourceless block "BOTTOM_UP/blk00000039" (SFF) removed.
-                        The signal "BOTTOM_UP/sig0000008f" is sourceless and has been removed.
-                         Sourceless block "BOTTOM_UP/blk00000044/blk00000063" (ROM) removed.
-                          The signal "BOTTOM_UP/blk00000044/sig0000013c" is sourceless and has been
-removed.
-                         Sourceless block "BOTTOM_UP/blk000000a5/blk000000c4" (ROM) removed.
-                          The signal "BOTTOM_UP/blk000000a5/sig000001dd" is sourceless and has been
-removed.
-                           Sourceless block "BOTTOM_UP/blk000000a5/blk000000c5" (MUX) removed.
-                            The signal "BOTTOM_UP/blk000000a5/sig000001de" is sourceless and has been
-removed.
-                           Sourceless block "BOTTOM_UP/blk000000a5/blk000000c6" (XOR) removed.
-                            The signal "BOTTOM_UP/sig00000036" is sourceless and has been removed.
-                             Sourceless block "BOTTOM_UP/blk0000011c" (FF) removed.
-                              The signal "BOTTOM_UP/sig00000057" is sourceless and has been removed.
-                               Sourceless block "BOTTOM_UP/blk0000015c" (FF) removed.
-                                The signal "BOTTOM_UP/sig000000b1" is sourceless and has been removed.
-                                 Sourceless block "BOTTOM_UP/blk0000013c" (FF) removed.
-                   Sourceless block "BOTTOM_UP/blk00000044/blk00000062" (XOR) removed.
-                    The signal "BOTTOM_UP/sig00000022" is sourceless and has been removed.
-                     Sourceless block "BOTTOM_UP/blk0000003a" (SFF) removed.
-                      The signal "BOTTOM_UP/sig0000008e" is sourceless and has been removed.
-                       Sourceless block "BOTTOM_UP/blk00000044/blk00000060" (ROM) removed.
-                        The signal "BOTTOM_UP/blk00000044/sig0000013a" is sourceless and has been
-removed.
-                       Sourceless block "BOTTOM_UP/blk000000a5/blk000000c1" (ROM) removed.
-                        The signal "BOTTOM_UP/blk000000a5/sig000001db" is sourceless and has been
-removed.
-                         Sourceless block "BOTTOM_UP/blk000000a5/blk000000c2" (MUX) removed.
-                          The signal "BOTTOM_UP/blk000000a5/sig000001dc" is sourceless and has been
-removed.
-                         Sourceless block "BOTTOM_UP/blk000000a5/blk000000c3" (XOR) removed.
-                          The signal "BOTTOM_UP/sig00000035" is sourceless and has been removed.
-                           Sourceless block "BOTTOM_UP/blk0000011d" (FF) removed.
-                            The signal "BOTTOM_UP/sig00000056" is sourceless and has been removed.
-                             Sourceless block "BOTTOM_UP/blk0000015d" (FF) removed.
-                              The signal "BOTTOM_UP/sig000000b0" is sourceless and has been removed.
-                               Sourceless block "BOTTOM_UP/blk0000013d" (FF) removed.
-                 Sourceless block "BOTTOM_UP/blk00000044/blk0000005f" (XOR) removed.
-                  The signal "BOTTOM_UP/sig00000023" is sourceless and has been removed.
-                   Sourceless block "BOTTOM_UP/blk0000003b" (SFF) removed.
-                    The signal "BOTTOM_UP/sig0000008d" is sourceless and has been removed.
-                     Sourceless block "BOTTOM_UP/blk00000044/blk0000005d" (ROM) removed.
-                      The signal "BOTTOM_UP/blk00000044/sig00000138" is sourceless and has been
-removed.
-                     Sourceless block "BOTTOM_UP/blk000000a5/blk000000be" (ROM) removed.
-                      The signal "BOTTOM_UP/blk000000a5/sig000001d9" is sourceless and has been
-removed.
-                       Sourceless block "BOTTOM_UP/blk000000a5/blk000000bf" (MUX) removed.
-                        The signal "BOTTOM_UP/blk000000a5/sig000001da" is sourceless and has been
-removed.
-                       Sourceless block "BOTTOM_UP/blk000000a5/blk000000c0" (XOR) removed.
-                        The signal "BOTTOM_UP/sig00000034" is sourceless and has been removed.
-                         Sourceless block "BOTTOM_UP/blk0000011e" (FF) removed.
-                          The signal "BOTTOM_UP/sig00000055" is sourceless and has been removed.
-                           Sourceless block "BOTTOM_UP/blk0000015e" (FF) removed.
-                            The signal "BOTTOM_UP/sig000000af" is sourceless and has been removed.
-                             Sourceless block "BOTTOM_UP/blk0000013e" (FF) removed.
-               Sourceless block "BOTTOM_UP/blk00000044/blk0000005c" (XOR) removed.
-                The signal "BOTTOM_UP/sig00000024" is sourceless and has been removed.
-                 Sourceless block "BOTTOM_UP/blk0000003c" (SFF) removed.
-                  The signal "BOTTOM_UP/sig0000008c" is sourceless and has been removed.
-                   Sourceless block "BOTTOM_UP/blk00000044/blk0000005a" (ROM) removed.
-                    The signal "BOTTOM_UP/blk00000044/sig00000136" is sourceless and has been
-removed.
-                   Sourceless block "BOTTOM_UP/blk000000a5/blk000000bb" (ROM) removed.
-                    The signal "BOTTOM_UP/blk000000a5/sig000001d7" is sourceless and has been
-removed.
-                     Sourceless block "BOTTOM_UP/blk000000a5/blk000000bc" (MUX) removed.
-                      The signal "BOTTOM_UP/blk000000a5/sig000001d8" is sourceless and has been
-removed.
-                     Sourceless block "BOTTOM_UP/blk000000a5/blk000000bd" (XOR) removed.
-                      The signal "BOTTOM_UP/sig00000033" is sourceless and has been removed.
-                       Sourceless block "BOTTOM_UP/blk0000011f" (FF) removed.
-                        The signal "BOTTOM_UP/sig00000054" is sourceless and has been removed.
-                         Sourceless block "BOTTOM_UP/blk0000015f" (FF) removed.
-                          The signal "BOTTOM_UP/sig000000ae" is sourceless and has been removed.
-                           Sourceless block "BOTTOM_UP/blk0000013f" (FF) removed.
-             Sourceless block "BOTTOM_UP/blk00000044/blk00000059" (XOR) removed.
-              The signal "BOTTOM_UP/sig00000025" is sourceless and has been removed.
-               Sourceless block "BOTTOM_UP/blk0000003d" (SFF) removed.
-                The signal "BOTTOM_UP/sig0000008b" is sourceless and has been removed.
-                 Sourceless block "BOTTOM_UP/blk00000044/blk00000057" (ROM) removed.
-                  The signal "BOTTOM_UP/blk00000044/sig00000134" is sourceless and has been
-removed.
-                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000b8" (ROM) removed.
-                  The signal "BOTTOM_UP/blk000000a5/sig000001d5" is sourceless and has been
-removed.
-                   Sourceless block "BOTTOM_UP/blk000000a5/blk000000b9" (MUX) removed.
-                    The signal "BOTTOM_UP/blk000000a5/sig000001d6" is sourceless and has been
-removed.
-                   Sourceless block "BOTTOM_UP/blk000000a5/blk000000ba" (XOR) removed.
-                    The signal "BOTTOM_UP/sig00000032" is sourceless and has been removed.
-                     Sourceless block "BOTTOM_UP/blk00000120" (FF) removed.
-                      The signal "BOTTOM_UP/sig00000053" is sourceless and has been removed.
-                       Sourceless block "BOTTOM_UP/blk00000160" (FF) removed.
-                        The signal "BOTTOM_UP/sig000000ad" is sourceless and has been removed.
-                         Sourceless block "BOTTOM_UP/blk00000140" (FF) removed.
-           Sourceless block "BOTTOM_UP/blk00000044/blk00000056" (XOR) removed.
-            The signal "BOTTOM_UP/sig00000026" is sourceless and has been removed.
-             Sourceless block "BOTTOM_UP/blk0000003e" (SFF) removed.
-              The signal "BOTTOM_UP/sig0000008a" is sourceless and has been removed.
-               Sourceless block "BOTTOM_UP/blk00000044/blk00000054" (ROM) removed.
-                The signal "BOTTOM_UP/blk00000044/sig00000132" is sourceless and has been
-removed.
-               Sourceless block "BOTTOM_UP/blk000000a5/blk000000b5" (ROM) removed.
-                The signal "BOTTOM_UP/blk000000a5/sig000001d3" is sourceless and has been
-removed.
-                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000b6" (MUX) removed.
-                  The signal "BOTTOM_UP/blk000000a5/sig000001d4" is sourceless and has been
-removed.
-                 Sourceless block "BOTTOM_UP/blk000000a5/blk000000b7" (XOR) removed.
-                  The signal "BOTTOM_UP/sig00000031" is sourceless and has been removed.
-                   Sourceless block "BOTTOM_UP/blk00000121" (FF) removed.
-                    The signal "BOTTOM_UP/sig00000052" is sourceless and has been removed.
-                     Sourceless block "BOTTOM_UP/blk00000161" (FF) removed.
-                      The signal "BOTTOM_UP/sig000000ac" is sourceless and has been removed.
-                       Sourceless block "BOTTOM_UP/blk00000141" (FF) removed.
-         Sourceless block "BOTTOM_UP/blk00000044/blk00000053" (XOR) removed.
-          The signal "BOTTOM_UP/sig00000027" is sourceless and has been removed.
-           Sourceless block "BOTTOM_UP/blk0000003f" (SFF) removed.
-            The signal "BOTTOM_UP/sig00000089" is sourceless and has been removed.
-             Sourceless block "BOTTOM_UP/blk00000044/blk00000051" (ROM) removed.
-              The signal "BOTTOM_UP/blk00000044/sig00000130" is sourceless and has been
-removed.
-             Sourceless block "BOTTOM_UP/blk000000a5/blk000000b2" (ROM) removed.
-              The signal "BOTTOM_UP/blk000000a5/sig000001d1" is sourceless and has been
-removed.
-               Sourceless block "BOTTOM_UP/blk000000a5/blk000000b3" (MUX) removed.
-                The signal "BOTTOM_UP/blk000000a5/sig000001d2" is sourceless and has been
-removed.
-               Sourceless block "BOTTOM_UP/blk000000a5/blk000000b4" (XOR) removed.
-                The signal "BOTTOM_UP/sig00000030" is sourceless and has been removed.
-                 Sourceless block "BOTTOM_UP/blk00000122" (FF) removed.
-                  The signal "BOTTOM_UP/sig00000051" is sourceless and has been removed.
-                   Sourceless block "BOTTOM_UP/blk00000162" (FF) removed.
-                    The signal "BOTTOM_UP/sig000000ab" is sourceless and has been removed.
-                     Sourceless block "BOTTOM_UP/blk00000142" (FF) removed.
-       Sourceless block "BOTTOM_UP/blk00000044/blk00000050" (XOR) removed.
-        The signal "BOTTOM_UP/sig00000028" is sourceless and has been removed.
-         Sourceless block "BOTTOM_UP/blk00000040" (SFF) removed.
-          The signal "BOTTOM_UP/sig00000088" is sourceless and has been removed.
-           Sourceless block "BOTTOM_UP/blk00000044/blk0000004e" (ROM) removed.
-            The signal "BOTTOM_UP/blk00000044/sig0000012e" is sourceless and has been
-removed.
-           Sourceless block "BOTTOM_UP/blk000000a5/blk000000af" (ROM) removed.
-            The signal "BOTTOM_UP/blk000000a5/sig000001cf" is sourceless and has been
-removed.
-             Sourceless block "BOTTOM_UP/blk000000a5/blk000000b0" (MUX) removed.
-              The signal "BOTTOM_UP/blk000000a5/sig000001d0" is sourceless and has been
-removed.
-             Sourceless block "BOTTOM_UP/blk000000a5/blk000000b1" (XOR) removed.
-              The signal "BOTTOM_UP/sig0000002f" is sourceless and has been removed.
-               Sourceless block "BOTTOM_UP/blk00000123" (FF) removed.
-                The signal "BOTTOM_UP/sig00000050" is sourceless and has been removed.
-                 Sourceless block "BOTTOM_UP/blk00000163" (FF) removed.
-                  The signal "BOTTOM_UP/sig000000aa" is sourceless and has been removed.
-                   Sourceless block "BOTTOM_UP/blk00000143" (FF) removed.
-     Sourceless block "BOTTOM_UP/blk00000044/blk0000004d" (XOR) removed.
-      The signal "BOTTOM_UP/sig00000029" is sourceless and has been removed.
-       Sourceless block "BOTTOM_UP/blk00000041" (SFF) removed.
-        The signal "BOTTOM_UP/sig00000087" is sourceless and has been removed.
-         Sourceless block "BOTTOM_UP/blk00000044/blk0000004b" (ROM) removed.
-          The signal "BOTTOM_UP/blk00000044/sig0000012c" is sourceless and has been
-removed.
-         Sourceless block "BOTTOM_UP/blk000000a5/blk000000ac" (ROM) removed.
-          The signal "BOTTOM_UP/blk000000a5/sig000001cd" is sourceless and has been
-removed.
-           Sourceless block "BOTTOM_UP/blk000000a5/blk000000ad" (MUX) removed.
-            The signal "BOTTOM_UP/blk000000a5/sig000001ce" is sourceless and has been
-removed.
-           Sourceless block "BOTTOM_UP/blk000000a5/blk000000ae" (XOR) removed.
-            The signal "BOTTOM_UP/sig0000002e" is sourceless and has been removed.
-             Sourceless block "BOTTOM_UP/blk00000124" (FF) removed.
-              The signal "BOTTOM_UP/sig0000004f" is sourceless and has been removed.
-               Sourceless block "BOTTOM_UP/blk00000164" (FF) removed.
-                The signal "BOTTOM_UP/sig000000a9" is sourceless and has been removed.
-                 Sourceless block "BOTTOM_UP/blk00000144" (FF) removed.
-   Sourceless block "BOTTOM_UP/blk00000044/blk0000004a" (XOR) removed.
-    The signal "BOTTOM_UP/sig0000002a" is sourceless and has been removed.
-     Sourceless block "BOTTOM_UP/blk00000042" (SFF) removed.
-      The signal "BOTTOM_UP/sig00000086" is sourceless and has been removed.
-       Sourceless block "BOTTOM_UP/blk00000044/blk00000048" (ROM) removed.
-        The signal "BOTTOM_UP/blk00000044/sig0000012a" is sourceless and has been
-removed.
-       Sourceless block "BOTTOM_UP/blk000000a5/blk000000a9" (ROM) removed.
-        The signal "BOTTOM_UP/blk000000a5/sig000001cb" is sourceless and has been
-removed.
-         Sourceless block "BOTTOM_UP/blk000000a5/blk000000aa" (MUX) removed.
-          The signal "BOTTOM_UP/blk000000a5/sig000001cc" is sourceless and has been
-removed.
-         Sourceless block "BOTTOM_UP/blk000000a5/blk000000ab" (XOR) removed.
-          The signal "BOTTOM_UP/sig0000002d" is sourceless and has been removed.
-           Sourceless block "BOTTOM_UP/blk00000125" (FF) removed.
-            The signal "BOTTOM_UP/sig0000004e" is sourceless and has been removed.
-             Sourceless block "BOTTOM_UP/blk00000165" (FF) removed.
-              The signal "BOTTOM_UP/sig000000a8" is sourceless and has been removed.
-               Sourceless block "BOTTOM_UP/blk00000145" (FF) removed.
- Sourceless block "BOTTOM_UP/blk00000044/blk00000047" (XOR) removed.
-  The signal "BOTTOM_UP/sig0000002b" is sourceless and has been removed.
-   Sourceless block "BOTTOM_UP/blk00000043" (SFF) removed.
-    The signal "BOTTOM_UP/sig00000085" is sourceless and has been removed.
-     Sourceless block "BOTTOM_UP/blk00000044/blk00000045" (ROM) removed.
-      The signal "BOTTOM_UP/blk00000044/sig00000128" is sourceless and has been
-removed.
-     Sourceless block "BOTTOM_UP/blk000000a5/blk000000a6" (ROM) removed.
-      The signal "BOTTOM_UP/blk000000a5/sig000001c9" is sourceless and has been
-removed.
-       Sourceless block "BOTTOM_UP/blk000000a5/blk000000a7" (MUX) removed.
-        The signal "BOTTOM_UP/blk000000a5/sig000001ca" is sourceless and has been
-removed.
-       Sourceless block "BOTTOM_UP/blk000000a5/blk000000a8" (XOR) removed.
-        The signal "BOTTOM_UP/sig0000002c" is sourceless and has been removed.
-         Sourceless block "BOTTOM_UP/blk00000126" (FF) removed.
-          The signal "BOTTOM_UP/sig0000004d" is sourceless and has been removed.
-           Sourceless block "BOTTOM_UP/blk00000166" (FF) removed.
-            The signal "BOTTOM_UP/sig000000a7" is sourceless and has been removed.
-             Sourceless block "BOTTOM_UP/blk00000146" (FF) removed.
-The signal "BOTTOM_UP/sig00000084" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000083" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000082" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000081" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000080" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000007f" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000007e" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000007d" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000007c" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000007b" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000007a" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000079" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000078" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000077" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000076" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000075" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000074" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000073" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000072" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000071" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000070" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000006f" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000006e" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000006d" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000006c" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000006b" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig0000006a" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000069" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000068" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000067" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000066" is sourceless and has been removed.
-The signal "BOTTOM_UP/sig00000065" is sourceless and has been removed.
+The signal "BOTTOM_UP/sig0000000b" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000023" (SFF) removed.
+  The signal "BOTTOM_UP/sig000000a5" is sourceless and has been removed.
+The signal "BOTTOM_UP/sig0000004c" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000106" (FF) removed.
+  The signal "BOTTOM_UP/sig000000a6" is sourceless and has been removed.
+The signal "BOTTOM_UP/sig00000041" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000111" (FF) removed.
+  The signal "BOTTOM_UP/sig00000062" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000151" (FF) removed.
+    The signal "BOTTOM_UP/sig000000bc" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000131" (FF) removed.
+The signal "BOTTOM_UP/sig00000040" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000112" (FF) removed.
+  The signal "BOTTOM_UP/sig00000061" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000152" (FF) removed.
+    The signal "BOTTOM_UP/sig000000bb" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000132" (FF) removed.
+The signal "BOTTOM_UP/sig0000003f" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000113" (FF) removed.
+  The signal "BOTTOM_UP/sig00000060" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000153" (FF) removed.
+    The signal "BOTTOM_UP/sig000000ba" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000133" (FF) removed.
+The signal "BOTTOM_UP/sig0000003e" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000114" (FF) removed.
+  The signal "BOTTOM_UP/sig0000005f" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000154" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b9" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000134" (FF) removed.
+The signal "BOTTOM_UP/sig0000003d" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000115" (FF) removed.
+  The signal "BOTTOM_UP/sig0000005e" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000155" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b8" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000135" (FF) removed.
+The signal "BOTTOM_UP/sig0000003c" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000116" (FF) removed.
+  The signal "BOTTOM_UP/sig0000005d" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000156" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b7" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000136" (FF) removed.
+The signal "BOTTOM_UP/sig0000003b" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000117" (FF) removed.
+  The signal "BOTTOM_UP/sig0000005c" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000157" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b6" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000137" (FF) removed.
+The signal "BOTTOM_UP/sig0000003a" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000118" (FF) removed.
+  The signal "BOTTOM_UP/sig0000005b" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000158" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b5" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000138" (FF) removed.
+The signal "BOTTOM_UP/sig00000039" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000119" (FF) removed.
+  The signal "BOTTOM_UP/sig0000005a" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000159" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b4" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000139" (FF) removed.
+The signal "BOTTOM_UP/sig00000038" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk0000011a" (FF) removed.
+  The signal "BOTTOM_UP/sig00000059" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk0000015a" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b3" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk0000013a" (FF) removed.
+The signal "BOTTOM_UP/sig00000037" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk0000011b" (FF) removed.
+  The signal "BOTTOM_UP/sig00000058" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk0000015b" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b2" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk0000013b" (FF) removed.
+The signal "BOTTOM_UP/sig00000036" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk0000011c" (FF) removed.
+  The signal "BOTTOM_UP/sig00000057" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk0000015c" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b1" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk0000013c" (FF) removed.
+The signal "BOTTOM_UP/sig00000035" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk0000011d" (FF) removed.
+  The signal "BOTTOM_UP/sig00000056" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk0000015d" (FF) removed.
+    The signal "BOTTOM_UP/sig000000b0" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk0000013d" (FF) removed.
+The signal "BOTTOM_UP/sig00000034" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk0000011e" (FF) removed.
+  The signal "BOTTOM_UP/sig00000055" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk0000015e" (FF) removed.
+    The signal "BOTTOM_UP/sig000000af" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk0000013e" (FF) removed.
+The signal "BOTTOM_UP/sig00000033" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk0000011f" (FF) removed.
+  The signal "BOTTOM_UP/sig00000054" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk0000015f" (FF) removed.
+    The signal "BOTTOM_UP/sig000000ae" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk0000013f" (FF) removed.
+The signal "BOTTOM_UP/sig00000032" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000120" (FF) removed.
+  The signal "BOTTOM_UP/sig00000053" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000160" (FF) removed.
+    The signal "BOTTOM_UP/sig000000ad" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000140" (FF) removed.
+The signal "BOTTOM_UP/sig00000031" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000121" (FF) removed.
+  The signal "BOTTOM_UP/sig00000052" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000161" (FF) removed.
+    The signal "BOTTOM_UP/sig000000ac" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000141" (FF) removed.
+The signal "BOTTOM_UP/sig00000030" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000122" (FF) removed.
+  The signal "BOTTOM_UP/sig00000051" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000162" (FF) removed.
+    The signal "BOTTOM_UP/sig000000ab" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000142" (FF) removed.
+The signal "BOTTOM_UP/sig0000002f" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000123" (FF) removed.
+  The signal "BOTTOM_UP/sig00000050" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000163" (FF) removed.
+    The signal "BOTTOM_UP/sig000000aa" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000143" (FF) removed.
+The signal "BOTTOM_UP/sig0000002e" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000124" (FF) removed.
+  The signal "BOTTOM_UP/sig0000004f" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000164" (FF) removed.
+    The signal "BOTTOM_UP/sig000000a9" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000144" (FF) removed.
+The signal "BOTTOM_UP/sig0000002d" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000125" (FF) removed.
+  The signal "BOTTOM_UP/sig0000004e" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000165" (FF) removed.
+    The signal "BOTTOM_UP/sig000000a8" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000145" (FF) removed.
+The signal "BOTTOM_UP/sig0000002c" is sourceless and has been removed.
+ Sourceless block "BOTTOM_UP/blk00000126" (FF) removed.
+  The signal "BOTTOM_UP/sig0000004d" is sourceless and has been removed.
+   Sourceless block "BOTTOM_UP/blk00000166" (FF) removed.
+    The signal "BOTTOM_UP/sig000000a7" is sourceless and has been removed.
+     Sourceless block "BOTTOM_UP/blk00000146" (FF) removed.
 The signal "UP_DOWN/cosine<7>" is sourceless and has been removed.
 The signal "UP_DOWN/cosine<6>" is sourceless and has been removed.
 The signal "UP_DOWN/cosine<5>" is sourceless and has been removed.
@@ -1624,48 +956,31 @@ The signal "LEFT_RIGHT/sig0000002c" is sourceless and has been removed.
    Sourceless block "LEFT_RIGHT/blk00000166" (FF) removed.
     The signal "LEFT_RIGHT/sig000000a7" is sourceless and has been removed.
      Sourceless block "LEFT_RIGHT/blk00000146" (FF) removed.
-
-The trimmed logic reported below is either:
-   1. part of a cycle
-   2. part of disabled logic
-   3. a side-effect of other trimmed logic
-
-The signal "dds_start_goo_OR_243_o" is unused and has been removed.
- Unused block "dds_start_goo_OR_243_o1" (ROM) removed.
 Unused block "BOTTOM_UP/blk00000001" (ONE) removed.
-Unused block "BOTTOM_UP/blk00000002" (ZERO) removed.
-Unused block "BOTTOM_UP/blk00000003" (FF) removed.
-Unused block "BOTTOM_UP/blk00000004" (FF) removed.
-Unused block "BOTTOM_UP/blk00000005" (FF) removed.
-Unused block "BOTTOM_UP/blk00000006" (FF) removed.
-Unused block "BOTTOM_UP/blk00000007" (FF) removed.
-Unused block "BOTTOM_UP/blk00000008" (FF) removed.
-Unused block "BOTTOM_UP/blk00000009" (FF) removed.
-Unused block "BOTTOM_UP/blk0000000a" (FF) removed.
-Unused block "BOTTOM_UP/blk0000000b" (FF) removed.
-Unused block "BOTTOM_UP/blk0000000c" (FF) removed.
-Unused block "BOTTOM_UP/blk0000000d" (FF) removed.
-Unused block "BOTTOM_UP/blk0000000e" (FF) removed.
-Unused block "BOTTOM_UP/blk0000000f" (FF) removed.
-Unused block "BOTTOM_UP/blk00000010" (FF) removed.
-Unused block "BOTTOM_UP/blk00000011" (FF) removed.
-Unused block "BOTTOM_UP/blk00000012" (FF) removed.
-Unused block "BOTTOM_UP/blk00000013" (FF) removed.
-Unused block "BOTTOM_UP/blk00000014" (FF) removed.
-Unused block "BOTTOM_UP/blk00000015" (FF) removed.
-Unused block "BOTTOM_UP/blk00000016" (FF) removed.
-Unused block "BOTTOM_UP/blk00000017" (FF) removed.
-Unused block "BOTTOM_UP/blk00000018" (FF) removed.
-Unused block "BOTTOM_UP/blk00000019" (FF) removed.
-Unused block "BOTTOM_UP/blk0000001a" (FF) removed.
-Unused block "BOTTOM_UP/blk0000001b" (FF) removed.
-Unused block "BOTTOM_UP/blk0000001c" (FF) removed.
-Unused block "BOTTOM_UP/blk0000001d" (FF) removed.
-Unused block "BOTTOM_UP/blk0000001e" (FF) removed.
-Unused block "BOTTOM_UP/blk0000001f" (FF) removed.
-Unused block "BOTTOM_UP/blk00000020" (FF) removed.
-Unused block "BOTTOM_UP/blk00000021" (FF) removed.
-Unused block "BOTTOM_UP/blk00000022" (FF) removed.
+Unused block "BOTTOM_UP/blk00000044/blk000000a3" (MUX) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000a8" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000ab" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000ae" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000b1" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000b4" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000b7" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000ba" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000bd" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000c0" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000c3" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000c6" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000c9" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000cc" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000cf" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000d2" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000d5" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000d8" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000db" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000de" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000e1" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000e4" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk000000e7" (XOR) removed.
+Unused block "BOTTOM_UP/blk000000a5/blk00000104" (MUX) removed.
 Unused block "BOTTOM_UP/blk00000167" (RAMB8BWER) removed.
 Unused block "DDC_SCL_IOBUF/OBUFT" (TRI) removed.
 Unused block "LEFT_RIGHT/blk00000001" (ONE) removed.
@@ -1723,6 +1038,65 @@ Unused block "UP_DOWN/blk00000167" (RAMB8BWER) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		BOTTOM_UP/blk00000002
+FD 		BOTTOM_UP/blk00000006
+   optimized to 0
+FD 		BOTTOM_UP/blk00000007
+   optimized to 0
+FD 		BOTTOM_UP/blk00000008
+   optimized to 0
+FD 		BOTTOM_UP/blk00000009
+   optimized to 0
+FD 		BOTTOM_UP/blk0000000a
+   optimized to 0
+FD 		BOTTOM_UP/blk0000000b
+   optimized to 0
+FD 		BOTTOM_UP/blk0000000c
+   optimized to 0
+FD 		BOTTOM_UP/blk0000000d
+   optimized to 0
+FD 		BOTTOM_UP/blk0000000e
+   optimized to 0
+FD 		BOTTOM_UP/blk0000000f
+   optimized to 0
+FD 		BOTTOM_UP/blk00000010
+   optimized to 0
+FD 		BOTTOM_UP/blk00000011
+   optimized to 0
+FD 		BOTTOM_UP/blk00000012
+   optimized to 0
+FD 		BOTTOM_UP/blk00000013
+   optimized to 0
+FD 		BOTTOM_UP/blk00000014
+   optimized to 0
+FD 		BOTTOM_UP/blk00000015
+   optimized to 0
+FD 		BOTTOM_UP/blk00000016
+   optimized to 0
+FD 		BOTTOM_UP/blk00000017
+   optimized to 0
+FD 		BOTTOM_UP/blk00000018
+   optimized to 0
+FD 		BOTTOM_UP/blk00000019
+   optimized to 0
+FD 		BOTTOM_UP/blk0000001a
+   optimized to 0
+FD 		BOTTOM_UP/blk0000001b
+   optimized to 0
+FD 		BOTTOM_UP/blk0000001c
+   optimized to 0
+FD 		BOTTOM_UP/blk0000001d
+   optimized to 0
+FD 		BOTTOM_UP/blk0000001e
+   optimized to 0
+FD 		BOTTOM_UP/blk0000001f
+   optimized to 0
+FD 		BOTTOM_UP/blk00000020
+   optimized to 0
+FD 		BOTTOM_UP/blk00000021
+   optimized to 0
+FD 		BOTTOM_UP/blk00000022
+   optimized to 0
 GND 		LEFT_RIGHT/blk00000002
 FD 		LEFT_RIGHT/blk00000006
    optimized to 0

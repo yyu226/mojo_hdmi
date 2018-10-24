@@ -73,6 +73,7 @@ wire actvA;
 initial
 begin
 		contX <= 0;
+		contY <= 0;
 		
 		TMDS_modulo <= 0;
 		shift_LOAD <= 0;
@@ -91,7 +92,15 @@ begin
 end
 assign actvA = ((contX<=HAPIX)&&(contX>0)) ? 1 : 0;
 //assign actvA = DE;
-assign oRequest = ~SYNC_V;				//if VSYNC polarity is positive, ~SYNC_C, if VSYNC is negative, SYNC_V
+always@(posedge DE or negedge SYNC_V)
+begin
+	if(!SYNC_V)
+		contY = 0;
+	else
+		contY = contY + 1;
+end
+
+assign oRequest = (contY > 0) ? 1 : 0;
 
 assign syncH = ~SYNC_H;
 assign syncV = ~SYNC_V;

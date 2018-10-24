@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Oct 12 17:21:22 2018
+Wed Oct 24 12:50:25 2018
 
 All signals are completely routed.
 
@@ -9,6 +9,7 @@ WARNING:ParHelpers:361 - There are 68 loadless signals in this design. This desi
    warnings.
 
    AVR_RX_BUSY_IBUF
+   Mram_lut10_RAMD_O
    Mram_lut110_RAMD_O
    Mram_lut111_RAMD_O
    Mram_lut112_RAMD_O
@@ -34,47 +35,46 @@ WARNING:ParHelpers:361 - There are 68 loadless signals in this design. This desi
    Mram_lut130_RAMD_O
    Mram_lut131_RAMD_O
    Mram_lut132_RAMD_O
+   Mram_lut133_RAMD_O
+   Mram_lut134_RAMD_O
+   Mram_lut135_RAMD_O
+   Mram_lut136_RAMD_O
+   Mram_lut137_RAMD_O
+   Mram_lut138_RAMD_O
+   Mram_lut139_RAMD_O
    Mram_lut13_RAMD_O
+   Mram_lut140_RAMD_O
+   Mram_lut141_RAMD_O
    Mram_lut14_RAMD_O
    Mram_lut15_RAMD_O
    Mram_lut16_RAMD_O
    Mram_lut17_RAMD_O
    Mram_lut18_RAMD_O
    Mram_lut19_RAMD_O
-   Mram_lut210_RAMD_O
-   Mram_lut211_RAMD_O
-   Mram_lut212_RAMD_O
-   Mram_lut213_RAMD_O
-   Mram_lut214_RAMD_O
-   Mram_lut215_RAMD_O
-   Mram_lut216_RAMD_O
-   Mram_lut217_RAMD_O
-   Mram_lut218_RAMD_O
-   Mram_lut219_RAMD_O
-   Mram_lut220_RAMD_O
-   Mram_lut221_RAMD_O
-   Mram_lut222_RAMD_O
-   Mram_lut223_RAMD_O
-   Mram_lut224_RAMD_O
-   Mram_lut225_RAMD_O
-   Mram_lut226_RAMD_O
-   Mram_lut227_RAMD_O
-   Mram_lut228_RAMD_O
-   Mram_lut229_RAMD_O
-   Mram_lut230_RAMD_O
-   Mram_lut231_RAMD_O
-   Mram_lut232_RAMD_O
-   Mram_lut233_RAMD_O
-   Mram_lut234_RAMD_O
-   Mram_lut235_RAMD_O
-   Mram_lut236_RAMD_O
-   Mram_lut237_RAMD_O
-   Mram_lut238_RAMD_O
-   Mram_lut239_RAMD_O
-   Mram_lut240_RAMD_O
-   Mram_lut241_RAMD_O
+   Mram_lut20_RAMD_O
+   Mram_lut21_RAMD_O
+   Mram_lut22_RAMD_O
+   Mram_lut23_RAMD_O
+   Mram_lut24_RAMD_O
+   Mram_lut25_RAMD_O
    Mram_lut26_RAMD_O
-   Mram_lut42_RAMD_O
+   Mram_lut27_RAMD_O
+   Mram_lut28_RAMD_O
+   Mram_lut29_RAMD_O
+   Mram_lut2_RAMD_O
+   Mram_lut30_RAMD_O
+   Mram_lut31_RAMD_O
+   Mram_lut32_RAMD_O
+   Mram_lut33_RAMD_O
+   Mram_lut3_RAMD_O
+   Mram_lut4_RAMD_O
+   Mram_lut5_RAMD_O
+   Mram_lut6_RAMD_O
+   Mram_lut7_RAMD_O
+   Mram_lut8_RAMD_O
+   Mram_lut9_RAMD_O
    UART_RX_IBUF
+   sync_in_1B2_IBUF
+   sync_in_2B2_IBUF
 
 
