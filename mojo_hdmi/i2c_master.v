@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define FWVGA 
+//`define FWVGA 
 module i2c_master(
 					input CLOCK_IN,
 					output CLOCK_OUT1,

@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-BV30EGG::  Wed Oct 24 12:50:10 2018
+DESKTOP-BV30EGG::  Thu Nov 08 14:52:39 2018
 
 par -w -intstyle ise -ol high -mt off dvi_demo_map.ncd dvi_demo.ncd
 dvi_demo.pcf 
@@ -27,16 +27,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-06-08".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,362 out of  11,440   11%
-    Number used as Flip Flops:               1,346
-    Number used as Latches:                     16
+  Number of Slice Registers:                 1,387 out of  11,440   12%
+    Number used as Flip Flops:               1,369
+    Number used as Latches:                     18
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,065 out of   5,720   36%
-    Number used as logic:                    1,458 out of   5,720   25%
-      Number using O6 output only:             861
+  Number of Slice LUTs:                      2,071 out of   5,720   36%
+    Number used as logic:                    1,495 out of   5,720   26%
+      Number using O6 output only:             895
       Number using O5 output only:             283
-      Number using O5 and O6:                  314
+      Number using O5 and O6:                  317
       Number used as ROM:                        0
     Number used as Memory:                     448 out of   1,440   31%
       Number used as Dual Port RAM:            448
@@ -45,18 +45,18 @@ Slice Logic Utilization:
         Number using O5 and O6:                 56
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:    159
-      Number with same-slice register load:     55
-      Number with same-slice carry load:       104
+    Number used exclusively as route-thrus:    128
+      Number with same-slice register load:     64
+      Number with same-slice carry load:        64
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   691 out of   1,430   48%
+  Number of occupied Slices:                   690 out of   1,430   48%
   Number of MUXCYs used:                       580 out of   2,860   20%
-  Number of LUT Flip Flop pairs used:        2,223
-    Number with an unused Flip Flop:         1,028 out of   2,223   46%
-    Number with an unused LUT:                 158 out of   2,223    7%
-    Number of fully used LUT-FF pairs:       1,037 out of   2,223   46%
+  Number of LUT Flip Flop pairs used:        2,236
+    Number with an unused Flip Flop:         1,013 out of   2,236   45%
+    Number with an unused LUT:                 165 out of   2,236    7%
+    Number of fully used LUT-FF pairs:       1,058 out of   2,236   47%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -120,96 +120,96 @@ WARNING:Par:288 - The signal UART_RX_IBUF has no load.  PAR will not attempt to 
 WARNING:Par:288 - The signal sync_in_1B2_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal sync_in_2B2_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal AVR_RX_BUSY_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut26_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut18_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut3_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut10_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut15_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut2_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut11_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut15_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut13_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut4_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut3_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut16_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut21_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut20_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut19_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut29_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut24_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut28_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut5_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut8_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut10_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut7_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut12_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut14_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut6_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut2_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut9_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut122_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut138_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut139_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut135_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut17_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut23_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut22_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut33_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut25_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut30_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut32_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut28_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut20_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut21_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut18_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut31_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut9_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut4_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut8_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut12_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut7_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut6_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut131_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut27_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut14_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut139_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut110_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut124_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut122_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut114_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut115_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut118_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut125_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut117_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut113_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut119_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut112_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut138_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut127_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut141_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut130_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut133_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut140_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut126_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut129_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut29_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut123_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut111_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut120_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut116_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut117_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut121_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut137_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut136_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut132_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut135_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_lut134_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut112_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut133_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_lut128_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut137_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut127_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut24_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut19_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut32_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut111_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut125_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut115_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut126_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut141_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut131_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut130_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut134_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut129_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut22_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut25_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut27_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut26_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut119_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut116_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut120_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut118_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut124_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut114_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut113_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut110_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut132_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut136_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_lut140_RAMD_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 11571 unrouted;      REAL time: 4 secs 
+Phase  1  : 11714 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 10280 unrouted;      REAL time: 5 secs 
+Phase  2  : 10389 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 2861 unrouted;      REAL time: 7 secs 
+Phase  3  : 3071 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 2866 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  4  : 3087 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: dvi_demo.ncd with current fully routed design.
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
-Total REAL time to Router completion: 14 secs 
-Total CPU time to Router completion: 14 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Total REAL time to Router completion: 13 secs 
+Total CPU time to Router completion: 13 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -220,7 +220,7 @@ Partition Implementation Status
 
 Generating "PAR" statistics.
 INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
-Timing Score: 3715 (Setup: 3715, Hold: 0)
+Timing Score: 13899 (Setup: 13899, Hold: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -229,70 +229,70 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net tx0 | SETUP       |         N/A|     3.318ns|     N/A|           0
-  _pclkx2                                   | HOLD        |     0.430ns|            |       0|           0
+  Autotimespec constraint for clock net new | SETUP       |         N/A|     2.191ns|     N/A|           9
+  _tx_data                                  | HOLD        |     0.448ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net PRO | SETUP       |         N/A|     4.869ns|     N/A|           0
-  GRAMMABLE_OSC/clk_400k                    | HOLD        |     0.396ns|            |       0|           0
+  Autotimespec constraint for clock net new | SETUP       |         N/A|     1.918ns|     N/A|           0
+  _data                                     | HOLD        |     0.534ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.837ns|     N/A|           0
-  100_IBUFG                                 | HOLD        |     0.219ns|            |       0|           0
-                                            | MINPERIOD   |         N/A|     5.330ns|     N/A|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLO | SETUP       |         N/A|     3.690ns|     N/A|           0
-  CK100                                     | HOLD        |     0.430ns|            |       0|           0
-                                            | MINPERIOD   |         N/A|     5.330ns|     N/A|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     4.208ns|     N/A|           0
-  _rx0/pclkx2                               | HOLD        |     0.413ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     3.942ns|     N/A|           0
-  _rx0/pclk                                 | HOLD        |     0.323ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net N80 | SETUP       |         N/A|     5.217ns|     N/A|           0
+  Autotimespec constraint for clock net N86 | SETUP       |         N/A|    13.328ns|     N/A|        6650
   _BUFG                                     | HOLD        |     0.411ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net tx0 | SETUP       |         N/A|     6.377ns|     N/A|           0
-  _pclk                                     | HOLD        |     0.391ns|            |       0|           0
+  Autotimespec constraint for clock net tx0 | SETUP       |         N/A|     3.727ns|     N/A|           0
+  _pclkx2                                   | HOLD        |     0.393ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net PRO | SETUP       |         N/A|     5.702ns|     N/A|           0
-  GRAMMABLE_OSC/clk_40m                     | HOLD        |     0.435ns|            |       0|           0
+  Autotimespec constraint for clock net PRO | SETUP       |         N/A|    61.956ns|     N/A|        3872
+  GRAMMABLE_OSC/clk_400k                    | HOLD        |     0.425ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net SYN | SETUP       |         N/A|     5.682ns|     N/A|           0
-  C_VS                                      | HOLD        |     0.489ns|            |       0|           0
+  Autotimespec constraint for clock net tx0 | SETUP       |         N/A|     6.503ns|     N/A|           0
+  _pclk                                     | HOLD        |     0.404ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net HDM | SETUP       |         N/A|     3.097ns|     N/A|        1456
-  I1_EXT_CLK/syncH                          | HOLD        |     0.256ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.651ns|     N/A|           0
+  100_IBUFG                                 | HOLD        |     0.351ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     5.330ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net new | SETUP       |         N/A|     2.168ns|     N/A|           0
-  _tx_data                                  | HOLD        |     0.467ns|            |       0|           0
+  Autotimespec constraint for clock net CLO | SETUP       |         N/A|     3.764ns|     N/A|           0
+  CK100                                     | HOLD        |     0.451ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     5.330ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net new | SETUP       |         N/A|     2.285ns|     N/A|           0
-  _data                                     | HOLD        |     0.504ns|            |       0|           0
+  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     4.999ns|     N/A|           0
+  _rx0/pclkx2                               | HOLD        |     0.411ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     2.284ns|     N/A|         751
-  _rx0/dec_b/c0                             | HOLD        |     0.459ns|            |       0|           0
+  Autotimespec constraint for clock net SYN | SETUP       |         N/A|     5.647ns|     N/A|           0
+  C_VS                                      | HOLD        |     0.485ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net rx0 | SETUP       |         N/A|     4.073ns|     N/A|           0
+  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     3.625ns|     N/A|           0
+  _rx0/pclk                                 | HOLD        |     0.304ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net PRO | SETUP       |         N/A|     5.474ns|     N/A|           0
+  GRAMMABLE_OSC/clk_40m                     | HOLD        |     0.416ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net HDM | SETUP       |         N/A|     2.967ns|     N/A|          75
+  I1_EXT_CLK/syncH                          | HOLD        |     0.178ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     2.308ns|     N/A|        3086
+  _rx0/dec_b/c0                             | HOLD        |     0.463ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net rx0 | SETUP       |         N/A|     5.593ns|     N/A|           0
   _pllclk1                                  | HOLD        |     0.438ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net syn | SETUP       |         N/A|     2.983ns|     N/A|           0
-  c_hs                                      | HOLD        |     0.371ns|            |       0|           0
+  Autotimespec constraint for clock net syn | SETUP       |         N/A|     2.907ns|     N/A|           0
+  c_hs                                      | HOLD        |     0.232ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net PRO | SETUP       |         N/A|     1.932ns|     N/A|        1385
-  GRAMMABLE_OSC/clk_400k_inv                | HOLD        |     0.521ns|            |       0|           0
+  Autotimespec constraint for clock net PRO | SETUP       |         N/A|     1.711ns|     N/A|          63
+  GRAMMABLE_OSC/clk_400k_inv                | HOLD        |     0.463ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.564ns|     N/A|           0
-  _40M                                      | HOLD        |     0.308ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.850ns|     N/A|           0
+  _40M                                      | HOLD        |     0.357ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     2.030ns|     N/A|         123
-  _rx0/dec_b/de                             | HOLD        |     0.534ns|            |       0|           0
+  Autotimespec constraint for clock net dvi | SETUP       |         N/A|     1.751ns|     N/A|           9
+  _rx0/dec_b/de                             | HOLD        |     0.133ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net syn | SETUP       |         N/A|     1.455ns|     N/A|           0
-  c_vs                                      | HOLD        |     0.432ns|            |       0|           0
+  Autotimespec constraint for clock net syn | SETUP       |         N/A|     1.870ns|     N/A|         135
+  c_vs                                      | HOLD        |     0.460ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     0.923ns|     N/A|           0
-  25                                        | HOLD        |     0.474ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     0.883ns|     N/A|           0
+  25                                        | HOLD        |     0.446ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -306,11 +306,11 @@ Derived Constraints for clk100_IBUFG
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|clk100_IBUFG                   |  89598.959ns|      5.330ns|  85784.443ns|            0|            0|         1345|            0|
-| clk25m                        |     16.732ns|      1.730ns|          N/A|            0|            0|            0|            0|
-| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      6.972ns|      2.670ns|          N/A|            0|            0|            0|            0|
+|clk100_IBUFG                   |  96339.633ns|      5.330ns| 103174.872ns|            0|            0|         1345|            0|
+| clk25m                        |     14.959ns|      1.730ns|          N/A|            0|            0|            0|            0|
+| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      6.233ns|      2.670ns|          N/A|            0|            0|            0|            0|
 | lkfx                          |             |             |             |             |             |             |             |
-| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      2.789ns|      2.670ns|          N/A|            0|            0|            0|            0|
+| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      2.493ns|      2.670ns|          N/A|            0|            0|            0|            0|
 | lk2x                          |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -320,10 +320,10 @@ Derived Constraints for CLOCK100
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|CLOCK100                       |  85868.586ns|      5.330ns|  95083.889ns|            0|            0|          494|            0|
-| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      6.028ns|      2.670ns|          N/A|            0|            0|            0|            0|
+|CLOCK100                       |  86748.674ns|      5.330ns|  95568.541ns|            0|            0|          494|            0|
+| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      6.059ns|      2.670ns|          N/A|            0|            0|            0|            0|
 | lkfx                          |             |             |             |             |             |             |             |
-| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      2.411ns|      2.670ns|          N/A|            0|            0|            0|            0|
+| PROGRAMMABLE_OSC/PIXEL_CLOCK/c|      2.424ns|      2.670ns|          N/A|            0|            0|            0|            0|
 | lk2x                          |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -333,11 +333,11 @@ Derived Constraints for rx0_pllclk1
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|rx0_pllclk1                    |  69786.978ns|      4.073ns|  97435.255ns|            0|            0|         2826|            0|
-| tx0_pllclk0                   |      0.682ns|      0.952ns|          N/A|            0|            0|            0|            0|
-|  tx0_pclkx10                  |      0.682ns|          N/A|          N/A|            0|            0|            0|            0|
-| tx0_pllclk2                   |      3.409ns|      1.730ns|          N/A|            0|            0|            0|            0|
-| tx0_pllclk1                   |      6.819ns|      1.730ns|          N/A|            0|            0|            0|            0|
+|rx0_pllclk1                    |  74507.450ns|      5.593ns|  92164.264ns|            0|            0|         2886|            0|
+| tx0_pllclk0                   |      0.770ns|      0.952ns|          N/A|            0|            0|            0|            0|
+|  tx0_pclkx10                  |      0.770ns|          N/A|          N/A|            0|            0|            0|            0|
+| tx0_pllclk2                   |      3.848ns|      1.730ns|          N/A|            0|            0|            0|            0|
+| tx0_pllclk1                   |      7.696ns|      1.730ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for clkext
@@ -353,7 +353,7 @@ Derived Constraints for clkext
 | tx0_pllclk1                   |     10.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
-4 constraints not met.
+8 constraints not met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 
@@ -367,8 +367,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 68 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 15 secs 
-Total CPU time to PAR completion: 14 secs 
+Total REAL time to PAR completion: 14 secs 
+Total CPU time to PAR completion: 13 secs 
 
 Peak Memory Usage:  4604 MB
 

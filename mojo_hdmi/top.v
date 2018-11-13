@@ -27,7 +27,7 @@
 //********************************************************************
 //`define DIRECTPASS
 `define EDID256
-`define TIDLP
+//`define TIDLP
 module dvi_demo (
   //input wire        rstbtn_n,    //The pink reset button
   input wire  clk100,      //50 MHz osicallator
@@ -1023,9 +1023,9 @@ parameter PHASE_OFFSET68V = 32'd3458343458;   parameter PHASE_OFFSET78V = 32'd39
 
 `else		//800*600
 //H_increment: 6826.66, V_increment: 6826.66 ^^^ R: [0,720] [60, 660] ^^^ C: [0,960], [80, 880]
-parameter PHASE_OFFSET08H = 32'd357913941;	 parameter PHASE_OFFSET18H = 32'd894784853;	parameter PHASE_INC_H1  = 32'd5965232; 
+parameter PHASE_OFFSET08H = 32'd357913941;	 parameter PHASE_OFFSET18H = 32'd894784853;	parameter PHASE_INC_H1  = 32'd5965232;
 parameter PHASE_OFFSET28H = 32'd1431655765;   parameter PHASE_OFFSET38H = 32'd1968526677;	parameter PHASE_INC_H6  = 32'd35791394;
-parameter PHASE_OFFSET48H = 32'd2505397589;   parameter PHASE_OFFSET58H = 32'd3042268501;	parameter PHASE_INC_H30 = 32'd178956970;
+parameter PHASE_OFFSET48H = 32'd2505397589;   parameter PHASE_OFFSET58H = 32'd3042268501;	parameter PHASE_INC_H30 = 32'd178956971;
 parameter PHASE_OFFSET68H = 32'd3579139413;   parameter PHASE_OFFSET78H = 32'd4116010325;
 
 parameter PHASE_OFFSET08V = 32'd357913941;	 parameter PHASE_OFFSET18V = 32'd894784853;	parameter PHASE_INC_V1  = 32'd4473924;
@@ -1038,14 +1038,14 @@ parameter PHASE_OFFSET68V = 32'd3579139413;   parameter PHASE_OFFSET78V = 32'd41
 always@(frame1)
 begin
 		case(co_n)
-			0: begin poff_H <= PHASE_OFFSET08H;		poff_V <= PHASE_OFFSET08V; poff_E <= 32'd0; end
-			1:	begin poff_H <= PHASE_OFFSET18H;		poff_V <= PHASE_OFFSET18V; poff_E <= 32'd536870912; end
-			2: begin poff_H <= PHASE_OFFSET28H;		poff_V <= PHASE_OFFSET28V; poff_E <= 32'd1073741824; end
-			3: begin poff_H <= PHASE_OFFSET38H;		poff_V <= PHASE_OFFSET38V; poff_E <= 32'd1610612736; end
-			4: begin poff_H <= PHASE_OFFSET48H;		poff_V <= PHASE_OFFSET48V; poff_E <= 32'd2147483648; end
-			5: begin poff_H <= PHASE_OFFSET58H;		poff_V <= PHASE_OFFSET58V; poff_E <= 32'd2684354560; end
-			6: begin poff_H <= PHASE_OFFSET68H;		poff_V <= PHASE_OFFSET68V; poff_E <= 32'd3221225472; end
-			7: begin poff_H <= PHASE_OFFSET78H;		poff_V <= PHASE_OFFSET78V; poff_E <= 32'd3758096384; end
+			0: begin poff_H <= PHASE_OFFSET08H;		poff_V <= PHASE_OFFSET08V; poff_E <= PHASE_OFFSET08H; end
+			1:	begin poff_H <= PHASE_OFFSET18H;		poff_V <= PHASE_OFFSET18V; poff_E <= PHASE_OFFSET18H; end
+			2: begin poff_H <= PHASE_OFFSET28H;		poff_V <= PHASE_OFFSET28V; poff_E <= PHASE_OFFSET28H; end
+			3: begin poff_H <= PHASE_OFFSET38H;		poff_V <= PHASE_OFFSET38V; poff_E <= PHASE_OFFSET38H; end
+			4: begin poff_H <= PHASE_OFFSET48H;		poff_V <= PHASE_OFFSET48V; poff_E <= PHASE_OFFSET48H; end
+			5: begin poff_H <= PHASE_OFFSET58H;		poff_V <= PHASE_OFFSET58V; poff_E <= PHASE_OFFSET58H; end
+			6: begin poff_H <= PHASE_OFFSET68H;		poff_V <= PHASE_OFFSET68V; poff_E <= PHASE_OFFSET68H; end
+			7: begin poff_H <= PHASE_OFFSET78H;		poff_V <= PHASE_OFFSET78V; poff_E <= PHASE_OFFSET78H; end
 			default: begin poff_H <= 32'd0;	poff_V <= 32'd0; end
 		endcase
 end
@@ -1073,9 +1073,9 @@ end
 always@(frame1)
 begin
 		case(co_K)
-		  1: begin phase_incH <= PHASE_INC_H1; 		phase_incV <= PHASE_INC_V1;  phase_incE <= 32'd8947848; end
-		  2: begin phase_incH <= PHASE_INC_H6; 		phase_incV <= PHASE_INC_V6;  phase_incE <= 32'd53687091; end
-		  3: begin phase_incH <= PHASE_INC_H30;		phase_incV <= PHASE_INC_V30; phase_incE <= 32'd268435456; end
+		  1: begin phase_incH <= PHASE_INC_H1; 		phase_incV <= PHASE_INC_V1;  phase_incE <= PHASE_INC_H1; end
+		  2: begin phase_incH <= PHASE_INC_H6; 		phase_incV <= PHASE_INC_V6;  phase_incE <= PHASE_INC_H6; end
+		  3: begin phase_incH <= PHASE_INC_H30;		phase_incV <= PHASE_INC_V30; phase_incE <= PHASE_INC_H30; end
 		  default: begin phase_incH <= 32'd0;	phase_incV <= 32'd0; end
 		endcase
 end

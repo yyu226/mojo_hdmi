@@ -18,7 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-`define FWVGA
+//`define FWVGA
+`define FQ120HZ
 module hdmi_top(
 					clock_pixel,
 					clock_TMDS,

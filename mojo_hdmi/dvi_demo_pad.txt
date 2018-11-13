@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Oct 24 12:50:25 2018
+Thu Nov 08 14:52:53 2018
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -116,10 +116,10 @@ Pinout by Pin Number:
 |P94       |            |IOBS     |IO_L40N_GCLK10_1          |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |P95       |            |IOBM     |IO_L40P_GCLK11_1          |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |P96       |            |         |GND                       |         |           |              |          |         |           |         |       |          |           |                |
-|P97       |            |IOBS     |IO_L34N_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
-|P98       |            |IOBM     |IO_L34P_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
-|P99       |test_pin<0> |IOB      |IO_L33N_1                 |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |       |UNLOCATED |NO         |NONE            |
-|P100      |test_pin<1> |IOB      |IO_L33P_1                 |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |       |UNLOCATED |NO         |NONE            |
+|P97       |test_pin<0> |IOB      |IO_L34N_1                 |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |       |UNLOCATED |NO         |NONE            |
+|P98       |test_pin<1> |IOB      |IO_L34P_1                 |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |       |UNLOCATED |NO         |NONE            |
+|P99       |            |IOBS     |IO_L33N_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
+|P100      |            |IOBM     |IO_L33P_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |P101      |            |IOBS     |IO_L32N_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |P102      |            |IOBM     |IO_L32P_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |P103      |            |         |VCCO_1                    |         |           |1             |          |         |           |         |2.50   |          |           |                |

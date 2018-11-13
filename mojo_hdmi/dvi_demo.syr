@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.14 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: dvi_demo.prj
 
@@ -375,12 +375,12 @@ WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\i2c_master
 WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\i2c_master.v" Line 250: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <hdmi_top>.
-WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 136: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 146: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 164: Assignment to red ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 165: Assignment to green ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 166: Assignment to blue ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 195: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 137: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 147: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 165: Assignment to red ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 166: Assignment to green ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 167: Assignment to blue ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v" Line 196: Result of 32-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:634 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\top.v" Line 666: Net <tdata[3][7]> does not have a driver.
 WARNING:HDLCompiler:552 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\top.v" Line 146: Input port SW[3] is not connected on this instance
 WARNING:HDLCompiler:552 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\top.v" Line 698: Input port channel[3] is not connected on this instance
@@ -391,28 +391,28 @@ WARNING:HDLCompiler:552 - "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\top.v" Lin
 
 Synthesizing Unit <dvi_demo>.
     Related source file is "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\top.v".
-        PHASE_OFFSET08H = 32'b00000000000000000000000000000000
-        PHASE_OFFSET18H = 32'b00100000000000000000000000000000
-        PHASE_INC_H1 = 32'b00000000100010001000100010001000
-        PHASE_OFFSET28H = 32'b01000000000000000000000000000000
-        PHASE_OFFSET38H = 32'b01100000000000000000000000000000
-        PHASE_INC_H6 = 32'b00000011001100110011001100110011
-        PHASE_OFFSET48H = 32'b10000000000000000000000000000000
-        PHASE_OFFSET58H = 32'b10100000000000000000000000000000
-        PHASE_INC_H30 = 32'b00010000000000000000000000000000
-        PHASE_OFFSET68H = 32'b11000000000000000000000000000000
-        PHASE_OFFSET78H = 32'b11100000000000000000000000000000
-        PHASE_OFFSET08V = 32'b00001110001000100010001000100010
-        PHASE_OFFSET18V = 32'b00101110001000100010001000100010
+        PHASE_OFFSET08H = 32'b00010101010101010101010101010101
+        PHASE_OFFSET18H = 32'b00110101010101010101010101010101
+        PHASE_INC_H1 = 32'b00000000010110110000010110110000
+        PHASE_OFFSET28H = 32'b01010101010101010101010101010101
+        PHASE_OFFSET38H = 32'b01110101010101010101010101010101
+        PHASE_INC_H6 = 32'b00000010001000100010001000100010
+        PHASE_OFFSET48H = 32'b10010101010101010101010101010101
+        PHASE_OFFSET58H = 32'b10110101010101010101010101010101
+        PHASE_INC_H30 = 32'b00001010101010101010101010101011
+        PHASE_OFFSET68H = 32'b11010101010101010101010101010101
+        PHASE_OFFSET78H = 32'b11110101010101010101010101010101
+        PHASE_OFFSET08V = 32'b00010101010101010101010101010101
+        PHASE_OFFSET18V = 32'b00110101010101010101010101010101
         PHASE_INC_V1 = 32'b00000000010001000100010001000100
-        PHASE_OFFSET28V = 32'b01001110001000100010001000100010
-        PHASE_OFFSET38V = 32'b01101110001000100010001000100010
+        PHASE_OFFSET28V = 32'b01010101010101010101010101010101
+        PHASE_OFFSET38V = 32'b01110101010101010101010101010101
         PHASE_INC_V6 = 32'b00000001100110011001100110011010
-        PHASE_OFFSET48V = 32'b10001110001000100010001000100010
-        PHASE_OFFSET58V = 32'b10101110001000100010001000100010
+        PHASE_OFFSET48V = 32'b10010101010101010101010101010101
+        PHASE_OFFSET58V = 32'b10110101010101010101010101010101
         PHASE_INC_V30 = 32'b00001000000000000000000000000000
-        PHASE_OFFSET68V = 32'b11001110001000100010001000100010
-        PHASE_OFFSET78V = 32'b11101110001000100010001000100010
+        PHASE_OFFSET68V = 32'b11010101010101010101010101010101
+        PHASE_OFFSET78V = 32'b11110101010101010101010101010101
 WARNING:Xst:2898 - Port 'SW', unconnected in block instance 'OPTOMA', is tied to GND.
 WARNING:Xst:2898 - Port 'channel', unconnected in block instance 'INSTANTIATION1', is tied to GND.
 WARNING:Xst:647 - Input <sync_in_1B2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -535,7 +535,7 @@ WARNING:Xst:2935 - Signal 'tdata<4>', unconnected in block 'dvi_demo', is tied t
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 17-bit subtractor for signal <n0411> created at line 1068.
+    Found 17-bit subtractor for signal <n0409> created at line 1068.
     Found 32-bit adder for signal <px_cntr[31]_GND_1_o_add_39_OUT> created at line 617.
     Found 30-bit adder for signal <lcntr[29]_GND_1_o_add_56_OUT> created at line 655.
     Found 11-bit adder for signal <m[10]_GND_1_o_add_75_OUT> created at line 748.
@@ -547,8 +547,8 @@ WARNING:Xst:2935 - Signal 'tdata<4>', unconnected in block 'dvi_demo', is tied t
     Found 16-bit adder for signal <row_cntr_i[15]_GND_1_o_add_97_OUT> created at line 812.
     Found 16-bit adder for signal <column_cntr[15]_GND_1_o_add_104_OUT> created at line 823.
     Found 16-bit adder for signal <column_cntr_i[15]_GND_1_o_add_110_OUT> created at line 832.
-    Found 13-bit adder for signal <n0410> created at line 1058.
-    Found 29-bit adder for signal <n0412> created at line 1068.
+    Found 13-bit adder for signal <n0408> created at line 1058.
+    Found 29-bit adder for signal <n0410> created at line 1068.
     Found 16-bit adder for signal <frc[15]_GND_1_o_add_261_OUT> created at line 1126.
     Found 32-bit adder for signal <wdt_timer[31]_GND_1_o_add_277_OUT> created at line 1166.
     Found 8-bit adder for signal <fc[7]_GND_1_o_add_281_OUT> created at line 1180.
@@ -638,7 +638,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <phase_incE<0>>. Latches may be g
 	inferred 332 D-type flip-flop(s).
 	inferred  64 Latch(s).
 	inferred  15 Comparator(s).
-	inferred  32 Multiplexer(s).
+	inferred  31 Multiplexer(s).
 	inferred   2 Finite State Machine(s).
 Unit <dvi_demo> synthesized.
 
@@ -1259,13 +1259,13 @@ Unit <edgedtct> synthesized.
 Synthesizing Unit <i2c_master>.
     Related source file is "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\i2c_master.v".
         REG_N1 = 8'b00000000
-        REG_N2 = 8'b00100011
-        REG_N3 = 8'b10110000
-        REG_N4 = 8'b00001011
-        REG_N5 = 8'b10001001
-        REG_N6 = 8'b01011000
+        REG_N2 = 8'b00110011
+        REG_N3 = 8'b11100100
+        REG_N4 = 8'b11010001
+        REG_N5 = 8'b11011111
+        REG_N6 = 8'b10010110
         REG_N7 = 8'b00001000
-        REG_N8 = 8'b01000100
+        REG_N8 = 8'b00011110
         REG_N9 = 8'b00000000
         REG_N10 = 8'b00000001
         REG_N11 = 8'b00000100
@@ -1348,14 +1348,14 @@ Unit <dcm> synthesized.
 
 Synthesizing Unit <hdmi_top>.
     Related source file is "C:\Users\Ying Yu\Desktop\Mojo_v3\mojo_hdmi\hdmi_top.v".
-        HAPIX = 11'b01101010110
-        HFPOR = 11'b00000001010
-        HSPUL = 11'b00000101000
-        HBPOR = 11'b00000000100
-        VAPIX = 11'b00111100000
-        VFPOR = 11'b00000001000
-        VSPUL = 11'b00000001111
-        VBPOR = 11'b00001001001
+        HAPIX = 11'b01100100000
+        HFPOR = 11'b00000110000
+        HSPUL = 11'b00000100000
+        HBPOR = 11'b00001010000
+        VAPIX = 11'b01001011000
+        VFPOR = 11'b00000000011
+        VSPUL = 11'b00000000100
+        VBPOR = 11'b00000011101
 WARNING:Xst:647 - Input <clock_TMDS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <HDMI_START> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 12-bit register for signal <contX>.
@@ -1364,15 +1364,15 @@ WARNING:Xst:647 - Input <HDMI_START> is never used. This port will be preserved 
     Found 1-bit register for signal <syncV>.
     Found 1-bit register for signal <actvA>.
     Found 32-bit register for signal <cntr>.
-    Found 32-bit adder for signal <cntr[31]_GND_145_o_add_1_OUT> created at line 127.
-    Found 12-bit adder for signal <contX[11]_GND_145_o_add_6_OUT> created at line 136.
-    Found 12-bit adder for signal <contY[11]_GND_145_o_add_12_OUT> created at line 146.
-    Found 12-bit comparator lessequal for signal <n0011> created at line 153
-    Found 12-bit comparator greater for signal <contX[11]_GND_145_o_LessThan_19_o> created at line 153
-    Found 12-bit comparator lessequal for signal <n0016> created at line 155
-    Found 12-bit comparator greater for signal <contY[11]_GND_145_o_LessThan_22_o> created at line 155
-    Found 12-bit comparator greater for signal <contX[11]_GND_145_o_LessThan_24_o> created at line 157
-    Found 12-bit comparator greater for signal <contY[11]_GND_145_o_LessThan_27_o> created at line 159
+    Found 32-bit adder for signal <cntr[31]_GND_145_o_add_1_OUT> created at line 128.
+    Found 12-bit adder for signal <contX[11]_GND_145_o_add_6_OUT> created at line 137.
+    Found 12-bit adder for signal <contY[11]_GND_145_o_add_12_OUT> created at line 147.
+    Found 12-bit comparator lessequal for signal <n0011> created at line 154
+    Found 12-bit comparator greater for signal <contX[11]_GND_145_o_LessThan_19_o> created at line 154
+    Found 12-bit comparator lessequal for signal <n0016> created at line 156
+    Found 12-bit comparator greater for signal <contY[11]_GND_145_o_LessThan_22_o> created at line 156
+    Found 12-bit comparator greater for signal <contX[11]_GND_145_o_LessThan_24_o> created at line 158
+    Found 12-bit comparator greater for signal <contY[11]_GND_145_o_LessThan_27_o> created at line 160
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  59 D-type flip-flop(s).
@@ -1457,7 +1457,7 @@ Macro Statistics
  8-bit comparator lessequal                            : 11
  8-bit comparator not equal                            : 1
  9-bit comparator lessequal                            : 4
-# Multiplexers                                         : 506
+# Multiplexers                                         : 505
  1-bit 2-to-1 multiplexer                              : 388
  1-bit 7-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 2
@@ -1468,7 +1468,7 @@ Macro Statistics
  24-bit 2-to-1 multiplexer                             : 2
  3-bit 2-to-1 multiplexer                              : 2
  30-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 14
+ 32-bit 2-to-1 multiplexer                             : 13
  4-bit 2-to-1 multiplexer                              : 10
  5-bit 2-to-1 multiplexer                              : 31
  7-bit 2-to-1 multiplexer                              : 9
@@ -1505,28 +1505,21 @@ WARNING:Xst:1290 - Hierarchical block <iBLUE> is unconnected in block <HDMI1_PC_
 INFO:Xst:2261 - The FF/Latch <tmdsclkint_0> in Unit <dvi_tx0> is equivalent to the following 4 FFs/Latches, which will be removed : <tmdsclkint_1> <tmdsclkint_2> <tmdsclkint_3> <tmdsclkint_4> 
 WARNING:Xst:1426 - The value init of the FF/Latch rscl hinder the constant cleaning in the block PROGRAMMABLE_OSC.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1710 - FF/Latch <poff_E_12> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_9> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_11> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_10> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_6> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_8> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_9> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_5> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_7> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_3> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_5> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_4> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_2> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_1> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_30> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_0> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_31> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_27> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_29> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_31> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_30> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_26> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_22> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_28> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_24> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_18> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_12> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_14> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_10> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_6> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_2> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <c1_q> (without init value) has a constant value of 0 in block <encg>. This FF/Latch will be trimmed during the optimization process.
@@ -1534,22 +1527,14 @@ WARNING:Xst:1710 - FF/Latch <c0_q> (without init value) has a constant value of 
 WARNING:Xst:1710 - FF/Latch <c1_q> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <c0_q> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <oe_scl> has a constant value of 0 in block <OPTOMA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_28> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_25> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_27> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_26> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_24> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_25> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_23> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_20> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_22> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_19> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_21> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_17> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_19> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_18> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_14> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_16> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_15> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_13> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_15> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_reg> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_reg> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_reg> (without init value) has a constant value of 0 in block <encg>. This FF/Latch will be trimmed during the optimization process.
@@ -1605,10 +1590,10 @@ The following registers are absorbed into counter <frc>: 1 register on signal <f
 The following registers are absorbed into counter <wdt_timer>: 1 register on signal <wdt_timer>.
 The following registers are absorbed into counter <fc>: 1 register on signal <fc>.
 The following registers are absorbed into counter <column_cntr>: 1 register on signal <column_cntr>.
-The following registers are absorbed into counter <column_cntr_i>: 1 register on signal <column_cntr_i>.
 The following registers are absorbed into counter <px_cntr>: 1 register on signal <px_cntr>.
-The following registers are absorbed into counter <row_cntr_i>: 1 register on signal <row_cntr_i>.
+The following registers are absorbed into counter <column_cntr_i>: 1 register on signal <column_cntr_i>.
 The following registers are absorbed into counter <row_cntr>: 1 register on signal <row_cntr>.
+The following registers are absorbed into counter <row_cntr_i>: 1 register on signal <row_cntr_i>.
 The following registers are absorbed into counter <m>: 1 register on signal <m>.
 The following registers are absorbed into counter <n>: 1 register on signal <n>.
 The following registers are absorbed into counter <lcntr>: 1 register on signal <lcntr>.
@@ -1641,7 +1626,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_lut1> will be implemented on LUTs ei
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 1024-word x 8-bit                   |          |
-    |     addrB          | connected to signal <_n0511>        |          |
+    |     addrB          | connected to signal <_n0509>        |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <dvi_demo> synthesized (advanced).
@@ -1829,7 +1814,7 @@ Macro Statistics
  8-bit comparator lessequal                            : 11
  8-bit comparator not equal                            : 1
  9-bit comparator lessequal                            : 4
-# Multiplexers                                         : 494
+# Multiplexers                                         : 493
  1-bit 2-to-1 multiplexer                              : 387
  1-bit 7-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 2
@@ -1839,7 +1824,7 @@ Macro Statistics
  16-bit 2-to-1 multiplexer                             : 2
  24-bit 2-to-1 multiplexer                             : 2
  30-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 14
+ 32-bit 2-to-1 multiplexer                             : 13
  4-bit 2-to-1 multiplexer                              : 4
  5-bit 2-to-1 multiplexer                              : 31
  7-bit 2-to-1 multiplexer                              : 9
@@ -1881,49 +1866,38 @@ WARNING:Xst:1426 - The value init of the FF/Latch rLED1 hinder the constant clea
 WARNING:Xst:1426 - The value init of the FF/Latch rLED0 hinder the constant cleaning in the block edid_256.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1293 - FF/Latch <oe_scl> has a constant value of 0 in block <edid_256>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_9> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_5> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_7> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_6> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_2> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_4> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_3> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_1> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_0> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_29> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_31> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_30> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_26> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_27> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_22> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_18> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_14> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_10> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <phase_incE_6> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <phase_incE_2> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_28> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_25> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_27> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_26> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_24> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_23> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_20> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_22> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_21> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_17> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_19> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_18> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_14> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_16> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_15> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_11> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_6> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_12> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_14> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_18> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_24> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_28> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_26> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_30> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_31> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <phase_incE_29> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_1> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_3> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_7> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_5> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_9> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <poff_E_13> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_12> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_8> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <poff_E_10> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_11> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_15> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_19> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_17> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_21> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_23> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_27> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <poff_E_25> (without init value) has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <tmdsclkint_0> in Unit <dvi_encoder_top> is equivalent to the following 4 FFs/Latches, which will be removed : <tmdsclkint_1> <tmdsclkint_2> <tmdsclkint_3> <tmdsclkint_4> 
-INFO:Xst:2261 - The FF/Latch <phase_incE_23> in Unit <dvi_demo> is equivalent to the following 5 FFs/Latches, which will be removed : <phase_incE_19> <phase_incE_15> <phase_incE_11> <phase_incE_7> <phase_incE_3> 
-INFO:Xst:2261 - The FF/Latch <phase_incE_25> in Unit <dvi_demo> is equivalent to the following 13 FFs/Latches, which will be removed : <phase_incE_24> <phase_incE_20> <phase_incE_21> <phase_incE_17> <phase_incE_16> <phase_incE_13> <phase_incE_12> <phase_incE_9> <phase_incE_8> <phase_incE_5> <phase_incE_4> <phase_incE_0> <phase_incE_1> 
+INFO:Xst:2261 - The FF/Latch <poff_E_28> in Unit <dvi_demo> is equivalent to the following 14 FFs/Latches, which will be removed : <poff_E_26> <poff_E_24> <poff_E_20> <poff_E_22> <poff_E_18> <poff_E_14> <poff_E_16> <poff_E_12> <poff_E_8> <poff_E_10> <poff_E_6> <poff_E_2> <poff_E_4> <poff_E_0> 
+INFO:Xst:2261 - The FF/Latch <phase_incE_17> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <phase_incE_5> 
+INFO:Xst:2261 - The FF/Latch <phase_incE_19> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <phase_incE_7> 
+INFO:Xst:2261 - The FF/Latch <phase_incE_25> in Unit <dvi_demo> is equivalent to the following 4 FFs/Latches, which will be removed : <phase_incE_21> <phase_incE_13> <phase_incE_9> <phase_incE_1> 
+INFO:Xst:2261 - The FF/Latch <phase_incE_20> in Unit <dvi_demo> is equivalent to the following 5 FFs/Latches, which will be removed : <phase_incE_22> <phase_incE_16> <phase_incE_10> <phase_incE_8> <phase_incE_4> 
+INFO:Xst:2261 - The FF/Latch <phase_incE_27> in Unit <dvi_demo> is equivalent to the following 5 FFs/Latches, which will be removed : <phase_incE_23> <phase_incE_15> <phase_incE_11> <phase_incE_3> <phase_incE_0> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_0> on signal <delay_stp[1:2]> with user encoding.
 -------------------
@@ -2054,8 +2028,8 @@ WARNING:Xst:2677 - Node <PROGRAMMABLE_OSC/rLED_2> of sequential type is unconnec
 WARNING:Xst:2677 - Node <PROGRAMMABLE_OSC/rLED_1> of sequential type is unconnected in block <dvi_demo>.
 WARNING:Xst:2677 - Node <PROGRAMMABLE_OSC/rLED_0> of sequential type is unconnected in block <dvi_demo>.
 WARNING:Xst:2677 - Node <OPTOMA/rLED3> of sequential type is unconnected in block <dvi_demo>.
-WARNING:Xst:2677 - Node <OPTOMA/rLED1> of sequential type is unconnected in block <dvi_demo>.
 WARNING:Xst:2677 - Node <OPTOMA/rLED0> of sequential type is unconnected in block <dvi_demo>.
+WARNING:Xst:2677 - Node <OPTOMA/rLED1> of sequential type is unconnected in block <dvi_demo>.
 WARNING:Xst:2677 - Node <OPTOMA/rLED2> of sequential type is unconnected in block <dvi_demo>.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
@@ -2109,6 +2083,7 @@ Optimizing unit <DRAM16XN_1> ...
 Optimizing unit <DRAM16XN_2> ...
 
 Optimizing unit <dvi_demo> ...
+WARNING:Xst:1710 - FF/Latch <poff_E_28> (without init value) has a constant value of 1 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1294 - Latch <poff_E_31> is equivalent to a wire in block <dvi_demo>.
 WARNING:Xst:1294 - Latch <poff_E_30> is equivalent to a wire in block <dvi_demo>.
 WARNING:Xst:1294 - Latch <poff_E_29> is equivalent to a wire in block <dvi_demo>.
@@ -2323,8 +2298,12 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wdt_timer_30> has a
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wdt_timer_31> has a constant value of 0 in block <dvi_demo>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <lcntr_0> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <HDMI1_EXT_CLK/contX_0> 
 INFO:Xst:2261 - The FF/Latch <lcntr_1> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <HDMI1_EXT_CLK/contX_1> 
+INFO:Xst:2261 - The FF/Latch <lcntr_2> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <HDMI1_EXT_CLK/contX_2> 
+INFO:Xst:2261 - The FF/Latch <lcntr_3> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <HDMI1_EXT_CLK/contX_3> 
 INFO:Xst:2261 - The FF/Latch <dvi_rx0/dec_b/cbnd/wa_0> in Unit <dvi_demo> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx0/dec_g/cbnd/wa_0> <dvi_rx0/dec_r/cbnd/wa_0> 
+INFO:Xst:2261 - The FF/Latch <lcntr_4> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <HDMI1_EXT_CLK/contX_4> 
 INFO:Xst:2261 - The FF/Latch <dvi_rx0/dec_b/cbnd/wa_1> in Unit <dvi_demo> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx0/dec_g/cbnd/wa_1> <dvi_rx0/dec_r/cbnd/wa_1> 
+INFO:Xst:2261 - The FF/Latch <lcntr_5> in Unit <dvi_demo> is equivalent to the following FF/Latch, which will be removed : <HDMI1_EXT_CLK/contX_5> 
 INFO:Xst:2261 - The FF/Latch <dvi_rx0/dec_b/cbnd/wa_2> in Unit <dvi_demo> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx0/dec_g/cbnd/wa_2> <dvi_rx0/dec_r/cbnd/wa_2> 
 INFO:Xst:2261 - The FF/Latch <dvi_rx0/dec_b/cbnd/wa_3> in Unit <dvi_demo> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx0/dec_g/cbnd/wa_3> <dvi_rx0/dec_r/cbnd/wa_3> 
 INFO:Xst:2261 - The FF/Latch <dvi_rx0/dec_b/des_0/counter_0> in Unit <dvi_demo> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx0/dec_g/des_0/counter_0> <dvi_rx0/dec_r/des_0/counter_0> 
@@ -2369,8 +2348,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1140
- Flip-Flops                                            : 1140
+# Registers                                            : 1136
+ Flip-Flops                                            : 1136
 
 =========================================================================
 
@@ -2393,21 +2372,21 @@ Top Level Output File Name         : dvi_demo.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3002
+# BELS                             : 3013
 #      GND                         : 4
 #      INV                         : 54
 #      LUT1                        : 304
-#      LUT2                        : 293
-#      LUT3                        : 193
-#      LUT4                        : 263
-#      LUT5                        : 273
-#      LUT6                        : 466
+#      LUT2                        : 295
+#      LUT3                        : 196
+#      LUT4                        : 266
+#      LUT5                        : 272
+#      LUT6                        : 474
 #      MUXCY                       : 539
 #      MUXF7                       : 61
 #      MUXF8                       : 24
 #      VCC                         : 4
-#      XORCY                       : 524
-# FlipFlops/Latches                : 1642
+#      XORCY                       : 520
+# FlipFlops/Latches                : 1640
 #      FD                          : 711
 #      FD_1                        : 38
 #      FDC                         : 131
@@ -2419,12 +2398,12 @@ Primitive and Black Box Usage:
 #      FDP_1                       : 4
 #      FDPE                        : 4
 #      FDPE_1                      : 16
-#      FDR                         : 330
+#      FDR                         : 326
 #      FDR_1                       : 1
 #      FDRE                        : 141
 #      FDS                         : 2
 #      FDSE                        : 9
-#      LD                          : 14
+#      LD                          : 16
 #      LDC                         : 2
 # RAMS                             : 191
 #      RAM16X1D                    : 60
@@ -2459,17 +2438,17 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1642  out of  11440    14%  
- Number of Slice LUTs:                 2350  out of   5720    41%  
-    Number used as Logic:              1846  out of   5720    32%  
+ Number of Slice Registers:            1640  out of  11440    14%  
+ Number of Slice LUTs:                 2365  out of   5720    41%  
+    Number used as Logic:              1861  out of   5720    32%  
     Number used as Memory:              504  out of   1440    35%  
        Number used as RAM:              504
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3065
-   Number with an unused Flip Flop:    1423  out of   3065    46%  
-   Number with an unused LUT:           715  out of   3065    23%  
-   Number of fully used LUT-FF pairs:   927  out of   3065    30%  
+ Number of LUT Flip Flop pairs used:   3080
+   Number with an unused Flip Flop:    1440  out of   3080    46%  
+   Number with an unused LUT:           715  out of   3080    23%  
+   Number of fully used LUT-FF pairs:   925  out of   3080    30%  
    Number of unique control sets:       157
 
 IO Utilization: 
@@ -2504,7 +2483,7 @@ Clock Information:
 Clock Signal                                                                 | Clock buffer(FF name)           | Load  |
 -----------------------------------------------------------------------------+---------------------------------+-------+
 clk100                                                                       | IBUFG+BUFIO2+BUFG               | 112   |
-_n0633(out12:O)                                                              | NONE(*)(phase_incE_28)          | 3     |
+_n0631(out12:O)                                                              | NONE(*)(phase_incE_27)          | 5     |
 dvi_rx0/PLL_ISERDES/CLKOUT1                                                  | NONE(pixelr_1st_0)              | 477   |
 dvi_rx0/dec_b/c0                                                             | NONE(column_cntr_H_0)           | 64    |
 dvi_rx0/dec_b/c1                                                             | NONE(row_cntr_H_0)              | 32    |
@@ -2513,7 +2492,7 @@ new_data                                                                     | N
 sync_vs(Mmux_sync_vs11:O)                                                    | NONE(*)(sync_out_2pc)           | 10    |
 clk100                                                                       | DCM_SP:CLK2X                    | 169   |
 new_tx_data                                                                  | NONE(n_0)                       | 4     |
-PLL_OSERDES_0/CLKOUT1                                                        | BUFG                            | 239   |
+PLL_OSERDES_0/CLKOUT1                                                        | BUFG                            | 235   |
 INSTANTIATION1/spi_slave/done_q                                              | NONE(INSTANTIATION1/spi_rcv_d_7)| 8     |
 clk100                                                                       | DCM_SP:CLKFX                    | 41    |
 PROGRAMMABLE_OSC/clk_400k                                                    | NONE(PROGRAMMABLE_OSC/toc_7)    | 40    |
@@ -2582,18 +2561,18 @@ Timing constraint: Default period analysis for Clock 'dvi_rx0/PLL_ISERDES/CLKOUT
   Total number of paths / destination ports: 6036 / 987
 -------------------------------------------------------------------------
 Delay:               3.874ns (Levels of Logic = 3)
-  Source:            px_cntr_6 (FF)
+  Source:            px_cntr_5 (FF)
   Destination:       pixelr_1st_0 (FF)
   Source Clock:      dvi_rx0/PLL_ISERDES/CLKOUT1 rising
   Destination Clock: dvi_rx0/PLL_ISERDES/CLKOUT1 falling
 
-  Data Path: px_cntr_6 to pixelr_1st_0
+  Data Path: px_cntr_5 to pixelr_1st_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.447   1.048  px_cntr_6 (px_cntr_6)
-     LUT6:I0->O            2   0.203   0.864  _n0716_inv14 (_n0716_inv14)
-     LUT6:I2->O            8   0.203   0.803  _n0716_inv17_rstpot (_n0716_inv17_rstpot)
+     FDRE:C->Q             4   0.447   1.048  px_cntr_5 (px_cntr_5)
+     LUT6:I0->O            2   0.203   0.864  _n0695_inv14 (_n0695_inv14)
+     LUT6:I2->O            8   0.203   0.803  _n0695_inv17_rstpot (_n0695_inv17_rstpot)
      LUT4:I3->O            1   0.205   0.000  pixelr_1st_0_dpot1 (pixelr_1st_0_dpot1)
      FDE_1:D                   0.102          pixelr_1st_0
     ----------------------------------------
@@ -2602,28 +2581,28 @@ Delay:               3.874ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SYNC_VS'
-  Clock period: 6.677ns (frequency: 149.763MHz)
+  Clock period: 6.849ns (frequency: 146.008MHz)
   Total number of paths / destination ports: 2120 / 68
 -------------------------------------------------------------------------
-Delay:               6.677ns (Levels of Logic = 4)
-  Source:            frame1_14_C_14 (FF)
+Delay:               6.849ns (Levels of Logic = 4)
+  Source:            frame1_5_C_5 (FF)
   Destination:       frame1_0_C_0 (FF)
   Source Clock:      SYNC_VS falling
   Destination Clock: SYNC_VS falling
 
-  Data Path: frame1_14_C_14 to frame1_0_C_0
+  Data Path: frame1_5_C_5 to frame1_0_C_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            1   0.447   0.684  frame1_14_C_14 (frame1_14_C_14)
-     LUT3:I1->O            3   0.203   1.015  frame1_141 (frame1_14)
-     LUT6:I0->O            1   0.203   0.684  PWR_1_o_frame1[15]_LessThan_37_o21 (PWR_1_o_frame1[15]_LessThan_37_o2)
-     LUT6:I4->O           41   0.203   1.420  PWR_1_o_frame1[15]_LessThan_37_o23 (PWR_1_o_frame1[15]_LessThan_37_o)
-     LUT2:I1->O           32   0.205   1.291  _n0711_inv1 (_n0711_inv)
+     FDE_1:C->Q            2   0.447   0.721  frame1_5_C_5 (frame1_5_C_5)
+     LUT3:I1->O           25   0.203   1.193  frame1_51 (frame1_5)
+     LUT6:I5->O            1   0.205   0.580  PWR_1_o_frame1[15]_LessThan_37_o22 (PWR_1_o_frame1[15]_LessThan_37_o21)
+     LUT6:I5->O           45   0.205   1.477  PWR_1_o_frame1[15]_LessThan_37_o23 (PWR_1_o_frame1[15]_LessThan_37_o)
+     LUT2:I1->O           32   0.205   1.291  _n0690_inv1 (_n0690_inv)
      FDE_1:CE                  0.322          frame1_0_C_0
     ----------------------------------------
-    Total                      6.677ns (1.583ns logic, 5.094ns route)
-                                       (23.7% logic, 76.3% route)
+    Total                      6.849ns (1.587ns logic, 5.262ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'new_data'
@@ -2641,7 +2620,7 @@ Delay:               3.491ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.447   0.924  last_pixel_7 (last_pixel_7)
-     LUT6:I1->O            1   0.203   0.580  pixelr_1st[7]_last_pixel[7]_not_equal_117_o3_SW0 (N1431)
+     LUT6:I1->O            1   0.203   0.580  pixelr_1st[7]_last_pixel[7]_not_equal_117_o3_SW0 (N1491)
      LUT5:I4->O            1   0.205   0.827  pixelr_1st[7]_last_pixel[7]_not_equal_117_o3 (pixelr_1st[7]_last_pixel[7]_not_equal_117_o3)
      LUT6:I2->O            1   0.203   0.000  pixelr_1st[7]_last_pixel[7]_not_equal_117_o5 (pixelr_1st[7]_last_pixel[7]_not_equal_117_o)
      FD:D                      0.102          trig_synco1
@@ -2741,7 +2720,7 @@ Delay:               1.852ns (Levels of Logic = 8)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'PLL_OSERDES_0/CLKOUT1'
   Clock period: 6.679ns (frequency: 149.726MHz)
-  Total number of paths / destination ports: 9068 / 365
+  Total number of paths / destination ports: 8999 / 357
 -------------------------------------------------------------------------
 Delay:               6.679ns (Levels of Logic = 6)
   Source:            dvi_tx0/encr/din_q_0 (FF)
@@ -2758,7 +2737,7 @@ Delay:               6.679ns (Levels of Logic = 6)
      LUT6:I3->O            8   0.205   0.803  dvi_tx0/encr/Mmux_q_m<7>11 (dvi_tx0/encr/q_m<7>)
      LUT6:I5->O            4   0.205   0.931  dvi_tx0/encr/ADDERTREE_INTERNAL_Madd91 (dvi_tx0/encr/ADDERTREE_INTERNAL_Madd9)
      LUT5:I1->O            1   0.203   0.684  dvi_tx0/encr/Msub_PWR_41_o_BUS_0017_sub_29_OUT_xor<2>12 (dvi_tx0/encr/Msub_PWR_41_o_BUS_0017_sub_29_OUT_xor<2>11)
-     LUT6:I4->O            1   0.203   0.580  dvi_tx0/encr/Msub_PWR_41_o_BUS_0017_sub_29_OUT_xor<2>14_SW0 (N1711)
+     LUT6:I4->O            1   0.203   0.580  dvi_tx0/encr/Msub_PWR_41_o_BUS_0017_sub_29_OUT_xor<2>14_SW0 (N1771)
      LUT6:I5->O            1   0.205   0.000  dvi_tx0/encr/Msub_PWR_41_o_BUS_0017_sub_29_OUT_xor<2>14 (dvi_tx0/encr/PWR_41_o_BUS_0017_sub_29_OUT<2>)
      FD:D                      0.102          dvi_tx0/encr/n0q_m_2
     ----------------------------------------
@@ -2768,7 +2747,7 @@ Delay:               6.679ns (Levels of Logic = 6)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'PROGRAMMABLE_OSC/clk_400k'
   Clock period: 7.160ns (frequency: 139.659MHz)
-  Total number of paths / destination ports: 393 / 72
+  Total number of paths / destination ports: 394 / 72
 -------------------------------------------------------------------------
 Delay:               3.580ns (Levels of Logic = 3)
   Source:            PROGRAMMABLE_OSC/state_FSM_FFd2 (FF)
@@ -2806,7 +2785,7 @@ Delay:               3.902ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      FDR:C->Q              7   0.447   1.002  OPTOMA/cbit_2 (OPTOMA/cbit_2)
      LUT3:I0->O            4   0.205   1.028  OPTOMA/Mmux_GND_6_o_GND_6_o_MUX_85_o11111 (OPTOMA/Mmux_GND_6_o_GND_6_o_MUX_85_o1111)
-     LUT6:I1->O            1   0.203   0.000  OPTOMA/GND_6_o_GND_6_o_OR_49_o4_F (N1911)
+     LUT6:I1->O            1   0.203   0.000  OPTOMA/GND_6_o_GND_6_o_OR_49_o4_F (N1971)
      MUXF7:I0->O           1   0.131   0.580  OPTOMA/GND_6_o_GND_6_o_OR_49_o4 (OPTOMA/GND_6_o_GND_6_o_OR_49_o4)
      LUT6:I5->O            1   0.205   0.000  OPTOMA/GND_6_o_GND_6_o_OR_49_o7 (OPTOMA/GND_6_o_GND_6_o_OR_49_o)
      FD_1:D                    0.102          OPTOMA/GND_6_o_SCL_DFF_27
@@ -3039,7 +3018,7 @@ Offset:              4.315ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            24   1.222   1.277  sync_in_2_IBUF (LED_3_OBUF)
-     LUT2:I0->O           32   0.203   1.291  _n0711_inv1 (_n0711_inv)
+     LUT2:I0->O           32   0.203   1.291  _n0690_inv1 (_n0690_inv)
      FDE_1:CE                  0.322          frame1_0_C_0
     ----------------------------------------
     Total                      4.315ns (1.747ns logic, 2.568ns route)
@@ -3079,7 +3058,7 @@ Offset:              3.193ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           3   1.222   0.879  PO_SDA_IOBUF (N79)
+     IOBUF:IO->O           3   1.222   0.879  PO_SDA_IOBUF (N85)
      LUT5:I2->O            1   0.205   0.580  PROGRAMMABLE_OSC/state_FSM_FFd2-In1 (PROGRAMMABLE_OSC/state_FSM_FFd2-In1)
      LUT3:I2->O            1   0.205   0.000  PROGRAMMABLE_OSC/state_FSM_FFd2-In2 (PROGRAMMABLE_OSC/state_FSM_FFd2-In)
      FD:D                      0.102          PROGRAMMABLE_OSC/state_FSM_FFd2
@@ -3100,7 +3079,7 @@ Offset:              2.206ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O          11   1.222   0.882  DDC_SDA_IOBUF (N811)
+     IOBUF:IO->O          11   1.222   0.882  DDC_SDA_IOBUF (N871)
      FDE:D                     0.102          OPTOMA/addr_4
     ----------------------------------------
     Total                      2.206ns (1.324ns logic, 0.882ns route)
@@ -3119,7 +3098,7 @@ Offset:              1.974ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           3   1.222   0.650  DDC_SCL_IOBUF (N80)
+     IOBUF:IO->O           3   1.222   0.650  DDC_SCL_IOBUF (N86)
      FDC:D                     0.102          OPTOMA/SSTOP
     ----------------------------------------
     Total                      1.974ns (1.324ns logic, 0.650ns route)
@@ -3280,7 +3259,7 @@ Offset:              8.872ns (Levels of Logic = 12)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNC_VS'
   Total number of paths / destination ports: 21 / 6
 -------------------------------------------------------------------------
-Offset:              6.055ns (Levels of Logic = 3)
+Offset:              6.198ns (Levels of Logic = 3)
   Source:            frame1_2_C_2 (FF)
   Destination:       LED<4> (PAD)
   Source Clock:      SYNC_VS falling
@@ -3290,12 +3269,12 @@ Offset:              6.055ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE_1:C->Q            1   0.447   0.684  frame1_2_C_2 (frame1_2_C_2)
-     LUT3:I1->O           18   0.203   1.297  frame1_21 (frame1_2)
+     LUT3:I1->O           25   0.203   1.440  frame1_21 (frame1_2)
      LUT5:I1->O            3   0.203   0.650  Mmux_sync_out_2B211 (sync_out_2B2_OBUF)
      OBUF:I->O                 2.571          LED_4_OBUF (LED<4>)
     ----------------------------------------
-    Total                      6.055ns (3.424ns logic, 2.631ns route)
-                                       (56.5% logic, 43.5% route)
+    Total                      6.198ns (3.424ns logic, 2.774ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk100'
@@ -3343,7 +3322,7 @@ Offset:              6.153ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sync_in_1'
   Total number of paths / destination ports: 9 / 3
 -------------------------------------------------------------------------
-Offset:              6.702ns (Levels of Logic = 3)
+Offset:              6.929ns (Levels of Logic = 3)
   Source:            frame1_0_LD (LATCH)
   Destination:       LED<4> (PAD)
   Source Clock:      sync_in_1 rising
@@ -3352,13 +3331,13 @@ Offset:              6.702ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              18   0.498   1.278  frame1_0_LD (frame1_0_LD)
-     LUT3:I0->O           18   0.205   1.297  frame1_21 (frame1_2)
+     LD:G->Q              22   0.498   1.362  frame1_0_LD (frame1_0_LD)
+     LUT3:I0->O           25   0.205   1.440  frame1_21 (frame1_2)
      LUT5:I1->O            3   0.203   0.650  Mmux_sync_out_2B211 (sync_out_2B2_OBUF)
      OBUF:I->O                 2.571          LED_4_OBUF (LED<4>)
     ----------------------------------------
-    Total                      6.702ns (3.477ns logic, 3.225ns route)
-                                       (51.9% logic, 48.1% route)
+    Total                      6.929ns (3.477ns logic, 3.452ns route)
+                                       (50.2% logic, 49.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'PROGRAMMABLE_OSC/clk_400k'
@@ -3471,7 +3450,7 @@ Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------+---------+---------+---------+---------+
 DDC_SCL                          |    6.281|         |    3.902|         |
 DDC_SDA                          |    2.545|         |         |         |
-OPTOMA/START                     |         |    6.163|    3.785|         |
+OPTOMA/START                     |         |    6.213|    4.012|         |
 OPTOMA/cSTATE[4]_GND_7_o_Mux_30_o|         |    2.962|         |         |
 OPTOMA/cSTATE[4]_GND_8_o_Mux_31_o|         |    2.739|         |         |
 clk100                           |    2.571|         |         |         |
@@ -3491,11 +3470,11 @@ Clock to Setup on destination clock HDMI1_EXT_CLK/syncH
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
 HDMI1_EXT_CLK/syncH  |         |         |    2.436|         |
-PLL_OSERDES_0/CLKOUT1|         |         |    5.615|         |
-SYNC_VS              |         |         |    7.377|         |
-_n0633               |         |         |    3.992|         |
+PLL_OSERDES_0/CLKOUT1|         |         |    5.495|         |
+SYNC_VS              |         |         |    7.630|         |
+_n0631               |         |         |    3.779|         |
 clk100               |         |         |    3.005|         |
-sync_in_1            |         |         |    8.024|         |
+sync_in_1            |         |         |    8.361|         |
 ---------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock INSTANTIATION1/spi_slave/done_q
@@ -3520,7 +3499,7 @@ Clock to Setup on destination clock OPTOMA/cSTATE[4]_GND_7_o_Mux_30_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DDC_SCL        |         |         |    3.002|         |
+DDC_SCL        |         |         |    2.774|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock OPTOMA/cSTATE[4]_GND_8_o_Mux_31_o
@@ -3528,7 +3507,7 @@ Clock to Setup on destination clock OPTOMA/cSTATE[4]_GND_8_o_Mux_31_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DDC_SCL        |         |         |    3.002|         |
+DDC_SCL        |         |         |    2.774|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock PLL_OSERDES_0/CLKOUT1
@@ -3539,11 +3518,11 @@ Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 HDMI1_EXT_CLK/syncH        |         |   17.521|         |         |
 PLL_OSERDES_0/CLKOUT1      |    6.679|         |         |         |
 PLL_OSERDES_0/CLKOUT2      |    1.767|         |         |         |
-SYNC_VS                    |         |   14.222|         |         |
+SYNC_VS                    |         |   14.689|         |         |
 clk100                     |   15.740|         |         |         |
 dvi_rx0/PLL_ISERDES/CLKOUT1|    8.938|         |         |         |
 sync_hs                    |    9.183|         |         |         |
-sync_in_1                  |   14.869|         |         |         |
+sync_in_1                  |   15.420|         |         |         |
 ---------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock PLL_OSERDES_0/CLKOUT2
@@ -3560,7 +3539,7 @@ Clock to Setup on destination clock PROGRAMMABLE_OSC/clk_400k
                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------+---------+---------+---------+---------+
-PROGRAMMABLE_OSC/clk_400k|    4.062|    2.991|    3.580|         |
+PROGRAMMABLE_OSC/clk_400k|    4.062|    3.008|    3.580|         |
 clk100                   |    2.449|         |         |         |
 -------------------------+---------+---------+---------+---------+
 
@@ -3569,19 +3548,19 @@ Clock to Setup on destination clock SYNC_VS
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-SYNC_VS                      |         |         |    6.677|         |
+SYNC_VS                      |         |         |    6.849|         |
 clk100                       |         |         |    2.942|         |
-sync_in_1                    |         |         |    7.324|         |
+sync_in_1                    |         |         |    7.543|         |
 sync_in_1_sync_in_2_AND_118_o|         |         |    1.818|         |
 -----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock _n0633
+Clock to Setup on destination clock _n0631
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYNC_VS        |         |         |    4.913|         |
-sync_in_1      |         |         |    5.560|         |
+SYNC_VS        |         |         |    6.218|         |
+sync_in_1      |         |         |    6.950|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk100
@@ -3589,18 +3568,18 @@ Clock to Setup on destination clock clk100
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-DDC_SCL                        |    4.087|         |         |         |
+DDC_SCL                        |    4.799|         |         |         |
 HDMI1_EXT_CLK/syncH            |         |    2.676|         |         |
 INSTANTIATION1/spi_slave/done_q|         |    1.179|         |         |
-OPTOMA/START                   |         |    4.264|         |         |
+OPTOMA/START                   |         |    3.627|         |         |
 PLL_OSERDES_0/CLKOUT1          |    1.438|         |         |         |
-SYNC_VS                        |         |    8.745|         |         |
+SYNC_VS                        |         |    9.212|         |         |
 clk100                         |    5.699|         |         |         |
 dvi_rx0/PLL_ISERDES/CLKOUT1    |    3.461|    4.369|         |         |
 dvi_rx0/dec_b/c1               |    4.139|    4.156|         |         |
 new_tx_data                    |    1.953|         |         |         |
 sync_hs                        |    3.706|         |         |         |
-sync_in_1                      |    9.392|         |         |         |
+sync_in_1                      |    9.943|         |         |         |
 sync_vs                        |    3.570|         |         |         |
 -------------------------------+---------+---------+---------+---------+
 
@@ -3609,12 +3588,12 @@ Clock to Setup on destination clock dvi_rx0/PLL_ISERDES/CLKOUT1
                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------+---------+---------+---------+---------+
-SYNC_VS                    |         |    9.873|         |         |
+SYNC_VS                    |         |   10.075|         |         |
 dvi_rx0/PLL_ISERDES/CLKOUT1|    4.535|         |    3.874|         |
 dvi_rx0/PLL_ISERDES/CLKOUT2|    2.634|         |         |         |
 dvi_rx0/dec_b/c0           |    4.637|    4.654|         |         |
 dvi_rx0/dec_b/c1           |    4.813|    4.830|         |         |
-sync_in_1                  |   10.520|         |         |         |
+sync_in_1                  |   10.806|         |         |         |
 ---------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock dvi_rx0/PLL_ISERDES/CLKOUT2
@@ -3676,10 +3655,10 @@ Clock to Setup on destination clock sync_hs
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-SYNC_VS         |         |    9.873|         |         |
+SYNC_VS         |         |   10.075|         |         |
 dvi_rx0/dec_b/de|    4.151|         |         |         |
 sync_hs         |    2.436|         |         |         |
-sync_in_1       |   10.520|         |         |         |
+sync_in_1       |   10.806|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sync_vs
@@ -3695,14 +3674,14 @@ sync_vs        |    1.852|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 21.18 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.01 secs
  
 --> 
 
-Total memory usage is 4561704 kilobytes
+Total memory usage is 4561668 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  536 (   0 filtered)
-Number of infos    :   94 (   0 filtered)
+Number of warnings :  507 (   0 filtered)
+Number of infos    :  102 (   0 filtered)
 
